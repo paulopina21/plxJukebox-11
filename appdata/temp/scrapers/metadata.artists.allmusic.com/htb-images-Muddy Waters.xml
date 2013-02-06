@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335025051</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Muddy Waters]]></original_keywords>
+	<keywords><![CDATA[+muddy +waters]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>4013</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Muddy Waters]]></title>
+			<filename><![CDATA[Muddy_Waters.jpg]]></filename>
+			<mbid>f86f1f07-d182-45ce-ae93-ef610880ca72</mbid>
+			<filesize>1023235</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>25500</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Muddy Waters]]></title>
+			<filename><![CDATA[Muddy_Waters_01.jpg]]></filename>
+			<mbid>f86f1f07-d182-45ce-ae93-ef610880ca72</mbid>
+			<filesize>197904</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

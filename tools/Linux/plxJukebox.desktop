@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=11.0
+Name=PleXus Jukebox
+GenericName=Jukebox Media Center
+Comment=Manage and view your media 
+Exec=plxJukebox
+Icon=raven
+Terminal=false
+Type=Application
+Categories=AudioVideo;Video;Player;TV;

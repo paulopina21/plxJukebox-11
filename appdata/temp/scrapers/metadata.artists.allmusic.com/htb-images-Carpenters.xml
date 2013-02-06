@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335021347</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Carpenters]]></original_keywords>
+	<keywords><![CDATA[+carpenters]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>4120</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Carpenters]]></title>
+			<filename><![CDATA[The_Carpenters.jpg]]></filename>
+			<mbid>4580d83b-093e-4241-91fb-2dd71f5f1f3f</mbid>
+			<filesize>536106</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>17387</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Carpenters]]></title>
+			<filename><![CDATA[The_Carpenters_-_1976.jpg]]></filename>
+			<mbid>4580d83b-093e-4241-91fb-2dd71f5f1f3f</mbid>
+			<filesize>80647</filesize>
+			<dimensions>600x600</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335031032</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Yann Tiersen]]></original_keywords>
+	<keywords><![CDATA[+yann +tiersen]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>3523</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Yann Tiersen]]></title>
+			<filename><![CDATA[tiersen_1.jpg]]></filename>
+			<keywords><![CDATA[Yann]]></keywords>
+			<mbid>12d432a3-feb0-49b1-a107-d20751880764</mbid>
+			<filesize>554560</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>5776</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Yann Tiersen]]></title>
+			<filename><![CDATA[Yann_Tiersen_500x500.jpg]]></filename>
+			<mbid>12d432a3-feb0-49b1-a107-d20751880764</mbid>
+			<filesize>53648</filesize>
+			<dimensions>500x500</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

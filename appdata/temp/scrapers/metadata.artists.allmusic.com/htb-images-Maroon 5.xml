@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335024861</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Maroon 5]]></original_keywords>
+	<keywords><![CDATA[+maroon +5]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>4</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>980</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Maroon 5]]></title>
+			<filename><![CDATA[fanart_6_3.jpg]]></filename>
+			<keywords><![CDATA[1080p]]></keywords>
+			<caption><![CDATA[Maroon 5]]></caption>
+			<mbid>0ab49580-c84f-44d4-875f-d83760ea2cfe</mbid>
+			<filesize>641540</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>981</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Maroon 5]]></title>
+			<filename><![CDATA[fanart2_4.jpg]]></filename>
+			<keywords><![CDATA[1080p]]></keywords>
+			<caption><![CDATA[Maroon 5]]></caption>
+			<mbid>0ab49580-c84f-44d4-875f-d83760ea2cfe</mbid>
+			<filesize>756027</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>1585</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Maroon 5]]></title>
+			<filename><![CDATA[Maroon_5.jpg]]></filename>
+			<mbid>0ab49580-c84f-44d4-875f-d83760ea2cfe</mbid>
+			<filesize>2029928</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>29526</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Maroon 5]]></title>
+			<filename><![CDATA[Maroon5_Backdrop.jpg]]></filename>
+			<keywords><![CDATA[Maroon 5 Adam Levine]]></keywords>
+			<caption><![CDATA[Maroon 5 Artist Backdrop]]></caption>
+			<mbid>0ab49580-c84f-44d4-875f-d83760ea2cfe</mbid>
+			<filesize>552702</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335021264</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Carl Orff]]></original_keywords>
+	<keywords><![CDATA[+carl +orff]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>1481</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Carl Orff]]></title>
+			<filename><![CDATA[Carl_Orff.jpg]]></filename>
+			<mbid>0b3ee6cd-a2df-4144-adf9-7807ee7ecc4f</mbid>
+			<filesize>1298471</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>6301</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Carl Orff]]></title>
+			<filename><![CDATA[carl-orff-01-tmb-500x500.jpg]]></filename>
+			<keywords><![CDATA[carl orff]]></keywords>
+			<mbid>0b3ee6cd-a2df-4144-adf9-7807ee7ecc4f</mbid>
+			<filesize>156561</filesize>
+			<dimensions>500x500</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335025066</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Mumford ]]></original_keywords>
+	<keywords><![CDATA[+mumford]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>5675</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Mumford & Sons]]></title>
+			<filename><![CDATA[fanart_82.jpg]]></filename>
+			<mbid>c44e9c22-ef82-4a77-9bcd-af6c958446d6</mbid>
+			<filesize>696307</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>9582</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Mumford & Sons]]></title>
+			<filename><![CDATA[Mumford_and-Sons_1920x1080.jpg]]></filename>
+			<keywords><![CDATA[and]]></keywords>
+			<caption><![CDATA[Mumford & Sons]]></caption>
+			<mbid>c44e9c22-ef82-4a77-9bcd-af6c958446d6</mbid>
+			<filesize>582082</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>10905</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Mumford & Sons]]></title>
+			<filename><![CDATA[folder_3_10.jpg]]></filename>
+			<caption><![CDATA[Mumford & Sons]]></caption>
+			<mbid>c44e9c22-ef82-4a77-9bcd-af6c958446d6</mbid>
+			<filesize>355626</filesize>
+			<dimensions>1080x1077</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

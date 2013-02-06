@@ -1,0 +1,3 @@
+- Ativar Gêneros e Playlist para Filmes
+- Ativar Gêneros de Seriados
+- Ativar Playlist e Plugins para Músicas

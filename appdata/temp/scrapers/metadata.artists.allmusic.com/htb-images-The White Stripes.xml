@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335030288</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[The White Stripes]]></original_keywords>
+	<keywords><![CDATA[+white +stripes]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>7</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>476</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[White_Stripes.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>778588</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>903</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[music-037.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>117572</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>2816</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[TheWhiteStripes.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>655126</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>7071</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[The_White_Stripes-fanart.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>364376</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>9885</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[The_White_Stripes.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>64504</filesize>
+			<dimensions>500x500</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>10497</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[34939_16x9.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>773263</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>10498</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The White Stripes]]></title>
+			<filename><![CDATA[imgThe_White_Stripes4_16x9.jpg]]></filename>
+			<mbid>11ae9fbb-f3d7-4a47-936f-4c0a04d3b3b5</mbid>
+			<filesize>609824</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

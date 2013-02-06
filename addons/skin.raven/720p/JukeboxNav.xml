@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window id="502">
+  <defaultcontrol>58</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <views>58</views>
+  <controls>
+	  <include>g_global_background_music</include>
+    <control type="image">
+      <description>ARTIST FANART</description>
+      <include>Dimensions_Fullscreen</include>
+      <texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+      <aspectratio>scale</aspectratio>
+      <fadetime>150</fadetime>
+      <include>Animation_BackdropFade</include>
+      <visible>!Skin.HasSetting(hidefanart) + !Player.HasMedia + Control.IsVisible(666)<!--[!Container(58).OnNext + !Container(58).OnPrevious]--></visible>
+    </control>
+	
+	  <include>g_global_background_visualisation</include>
+	  <include>g_global_background_video</include>
+    <include>MUSIC_NOWPLAYING_LAYER</include> 
+    <include>MUSIC_NOWPLAYING_LAYER</include> 
+
+    <control type="group">
+      <visible>Control.IsVisible(58)</visible>
+      <include>Animation_Jukebox_Fade</include>
+      <include>g_global_background_filter</include>
+    </control>
+
+    <include>Playlist_Jukebox_Showcase</include>
+
+    <include>Viewtype_MusicShowcase</include>
+    <include>credits_label</include>
+	
+    <!--
+	<include>Global_Time_TopRight_Music</include>
+    <include>Global_Time_LowerLeft_music</include>
+    -->
+  </controls>
+</window>

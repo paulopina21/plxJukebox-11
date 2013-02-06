@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335023183</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Gigi D'Agostino]]></original_keywords>
+	<keywords><![CDATA[+gigi +d'agostino]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>7623</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Gigi D'Agostino]]></title>
+			<filename><![CDATA[Gigi_DAgostino.jpg]]></filename>
+			<mbid>57c1e5ea-e08f-413a-bcb1-f4e4b675bead</mbid>
+			<filesize>137481</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>10000</rating>
+			<votes>1</votes>
+		</image>
+		<image>
+			<id>25803</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Gigi D&#039;Agostino]]></title>
+			<filename><![CDATA[gigi.jpg]]></filename>
+			<mbid>57c1e5ea-e08f-413a-bcb1-f4e4b675bead</mbid>
+			<filesize>160432</filesize>
+			<dimensions>1282x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>28282</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Gigi D'Agostino]]></title>
+			<filename><![CDATA[gigi-d-agostino-88903.jpg]]></filename>
+			<mbid>57c1e5ea-e08f-413a-bcb1-f4e4b675bead</mbid>
+			<filesize>37158</filesize>
+			<dimensions>334x334</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

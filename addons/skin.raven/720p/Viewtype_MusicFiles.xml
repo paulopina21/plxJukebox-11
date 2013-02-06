@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Raven-->
+<includes>
+  <include name="Viewtype_MusicFiles">
+    <!--IMAGE-->
+    <!--<control type="image"><posx>805</posx><posy>183</posy><width>450</width><height>374</height><aspectratio align="right" aligny="bottom">strech</aspectratio><texture background="true">raven/music/bg_playlist.png</texture><bordersize>5</bordersize><visible>Control.IsVisible(513) + Window.IsActive(musicfiles)</visible><animation type="Visible"><effect type="fade" time="500"></effect><effect type="slide" start="-460,0" end="0,0" time="300" tween="cubic" easing="inout"></effect></animation><animation type="Hidden"><effect type="slide" start="0,0" end="500,0" time="300" tween="cubic" easing="inout"></effect></animation></control>-->
+    <control type="group">
+      <description>MAIN LISTS</description>
+      <control type="image">
+        <visible>Control.IsVisible(513) + Window.IsActive(musicfiles)</visible>
+        <posx>0</posx>
+        <posy>175</posy>
+        <width>1280</width>
+        <height>400</height>
+        <bordersize>0</bordersize>
+        <fadetime>200</fadetime>
+        <texture background="false">raven/music/bg_lists.png</texture>
+        <aspectratio align="center" aligny="center">stretch</aspectratio>
+        <animation type="Visible">
+          <effect type="fade" time="200" start="0"></effect>
+        </animation>
+        <animation type="Hidden">
+          <effect type="fade" time="300" end="0"></effect>
+        </animation>
+      </control>
+      <control type="image">
+        <visible>Control.IsVisible(513) + Window.IsActive(musicfiles)</visible>
+        <posx>458</posx>
+        <posy>193</posy>
+        <width>360</width>
+        <height>360</height>
+        <aspectratio align="center" aligny="center">strech</aspectratio>
+        <texture background="true">$INFO[ListItem.Icon]</texture>
+        <!--<bordertexture border="5">confluence/button-nofocus.png</bordertexture>-->
+        <bordersize>5</bordersize>
+      </control>
+      <control type="fixedlist" id="513">
+        <posx>0</posx>
+        <posy>195</posy>
+        <height>355</height>
+        <width>1680</width>
+        <onup>513</onup>
+        <ondown>513</ondown>
+        <onleft>parentdir</onleft>
+        <onright>parentdir</onright>
+        <scrolltime>200</scrolltime>
+        <viewtype label="Album List">list</viewtype>
+        <orientation>vertical</orientation>
+        <focusposition>4</focusposition>
+        <movement>8</movement>
+        <pagecontrol>60</pagecontrol>
+        <itemlayout width="500" height="32">
+          <control type="label">
+            <posx>20</posx>
+            <posy>0</posy>
+            <width>430</width>
+            <height>32</height>
+            <aligny>center</aligny>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>DD000000</shadowcolor>
+            <selectedcolor>blue</selectedcolor>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+          <!--<control type="image"><posx>0</posx><posy>32</posy><width>490</width><height>4</height><aspectratio>stretch</aspectratio><texture>confluence/separator.png</texture>/*<visible>Control.IsVisible(513) + ![Container.Content(movies) | Window.IsActive(musiclibrary)]</visible>*/</control>-->
+        </itemlayout>
+        <focusedlayout width="500" height="36">
+          <control type="image">
+            <posx>0</posx>
+            <posy>3</posy>
+            <width>463</width>
+            <height>35</height>
+            <aspectratio>stretch</aspectratio>
+            <texture>raven/common/selector.png</texture>
+            <!--<visible>Control.IsVisible(513) + ![Container.Content(movies) | Window.IsActive(musiclibrary)]</visible>-->
+          </control>
+          <control type="label">
+            <posx>20</posx>
+            <posy>0</posy>
+            <width>345</width>
+            <height>47</height>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Label]</label>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <selectedcolor>black</selectedcolor>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" end="125" time="150" center="0,50"></effect>
+            </animation>
+          </control>
+        </focusedlayout>
+        <visible>Container.HasFiles</visible>
+      </control>
+      <control type="group">
+        <visible>!Control.HasFocus(60)+ !ControlGroup(7000).HasFocus + Control.IsVisible(513)</visible>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>210</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_F</font>
+            <textcolor>white</textcolor>
+            <label>1. $INFO[MusicPlayer.offset(0).Artist] - $INFO[MusicPlayer.offset(0).Album] - $INFO[MusicPlayer.offset(0).Title]</label>
+            <scroll>true</scroll>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(0).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>240</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>2. $INFO[MusicPlayer.offset(1).Artist] - $INFO[MusicPlayer.offset(1).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(1).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>273</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>3. $INFO[MusicPlayer.offset(2).Artist] - $INFO[MusicPlayer.offset(2).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(2).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>306</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>4. $INFO[MusicPlayer.offset(3).Artist] - $INFO[MusicPlayer.offset(3).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(3).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>339</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>5. $INFO[MusicPlayer.offset(4).Artist] - $INFO[MusicPlayer.offset(4).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(4).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>372</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>6. $INFO[MusicPlayer.offset(5).Artist] - $INFO[MusicPlayer.offset(5).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(5).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>405</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>7. $INFO[MusicPlayer.offset(6).Artist] - $INFO[MusicPlayer.offset(6).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(6).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>438</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>8. $INFO[MusicPlayer.offset(7).Artist] - $INFO[MusicPlayer.offset(7).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(7).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>470</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>9. $INFO[MusicPlayer.offset(8).Artist] - $INFO[MusicPlayer.offset(8).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(8).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>503</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>10. $INFO[MusicPlayer.offset(9).Artist] - $INFO[MusicPlayer.offset(9).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(9).Title)</visible>
+        </control>
+        <control type="group">
+          <control type="label">
+            <posx>820</posx>
+            <posy>533</posy>
+            <width>450</width>
+            <align>left</align>
+            <aligny>center</aligny>
+            <include>Animation_CommonFade</include>
+            <font>Font_MusicFiles_NF</font>
+            <textcolor>white</textcolor>
+            <label>11. $INFO[MusicPlayer.offset(10).Artist] - $INFO[MusicPlayer.offset(10).Title]</label>
+          </control>
+          <visible>!IsEmpty(MusicPlayer.offset(10).Title)</visible>
+        </control>
+      </control>
+    </control>
+    <control type="group">
+      <visible>!Control.HasFocus(110)</visible>
+      <control type="label">
+        <posx>20</posx>
+        <posy>110r</posy>
+        <width>1080</width>
+        <align>left</align>
+        <aligny>center</aligny>
+        <include>Animation_CommonFade</include>
+        <font>Font_AlbumName</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
+        <visible>!Control.HasFocus(60)+ !ControlGroup(7000).HasFocus + Control.IsVisible(513)</visible>
+      </control>
+      <control type="label">
+        <posx>20</posx>
+        <posy>140r</posy>
+        <width>790</width>
+        <align>left</align>
+        <aligny>center</aligny>
+        <include>Animation_CommonFade</include>
+        <font>Font_ArtistName</font>
+        <textcolor>white</textcolor>
+        <scroll>true</scroll>
+        <shadowcolor>black</shadowcolor>
+        <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+        <visible>!Control.HasFocus(60)+ !ControlGroup(7000).HasFocus + Control.IsVisible(513)</visible>
+      </control>
+      <control type="label">
+        <posx>40</posx>
+        <posy>140r</posy>
+        <width>1080</width>
+        <align>left</align>
+        <aligny>center</aligny>
+        <include>Animation_CommonFade</include>
+        <font>Font_ArtistName</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>black</shadowcolor>
+        <label>[UPPERCASE]$INFO[Container.NumItems] $LOCALIZE[31025] | $LOCALIZE[31024] $INFO[Container.CurrentPage]/$INFO[Container.NumPages][/UPPERCASE]</label>
+        <visible>[ControlGroup(7000).HasFocus | ControlGroup(60).HasFocus] + Control.IsVisible(513)</visible>
+      </control>
+      <control type="label">
+        <posx>100</posx>
+        <posy>85</posy>
+        <width>1080</width>
+        <align>center</align>
+        <aligny>center</aligny>
+        <include>Animation_CommonFade</include>
+        <font>Font_ArtistName</font>
+        <textcolor>white</textcolor>
+        <scroll>true</scroll>
+        <shadowcolor>black</shadowcolor>
+        <label>[UPPERCASE]$INFO[ListItem.Artist] - $INFO[ListItem.Album][/UPPERCASE]</label>
+        <visible>Control.IsVisible(513)+!Control.HasFocus(60)+!ControlGroup(7000).HasFocus + !IsEmpty(ListItem.Album)</visible>
+      </control>
+      <control type="label">
+        <posx>100</posx>
+        <posy>50</posy>
+        <width>1080</width>
+        <align>center</align>
+        <aligny>center</aligny>
+        <include>Animation_CommonFade</include>
+        <font>Font_ArtistName</font>
+        <textcolor>white</textcolor>
+        <scroll>true</scroll>
+        <shadowcolor>black</shadowcolor>
+        <label>[UPPERCASE]$INFO[Container.FolderName][/UPPERCASE]</label>
+        <visible>Control.IsVisible(513)+!Control.HasFocus(60)+!ControlGroup(7000).HasFocus + IsEmpty(ListItem.Album)</visible>
+      </control>
+      <include>credits_label</include>
+      <!--<control type="scrollbar" id="60"><posx>305</posx><posy>670</posy><width>670</width><height>41</height><visible allowhiddenfocus="true">Control.HasFocus(60)</visible><texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground><texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar><texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus><textureslidernib>views/scrollBarNib.png</textureslidernib><textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus><pulseonselect>yes</pulseonselect><onup>509</onup><ondown>110</ondown><showonepage>false</showonepage><orientation>horizontal</orientation><visible>Control.IsVisible(509)</visible><enable>Control.IsVisible(509)</enable></control>-->
+    </control>
+  </include>
+</includes>

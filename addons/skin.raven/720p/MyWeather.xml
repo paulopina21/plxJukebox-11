@@ -1,0 +1,510 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--raven-->
+<window id="2600">
+  <defaultcontrol always="true">50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <controls>
+    <include>WeatherClouds</include>
+    <control type="image">
+      <description> Last Overlay </description>
+      <visible></visible>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1280</width>
+      <height>720</height>
+      <texture>tv-landscape/2nd-overlay.png</texture>
+      <aspectratio>stretch</aspectratio>
+    </control>
+    <!--<control type="image"><include>Dimensions_Fullscreen</include><width>1280</width><height>720</height><texture>special://skin/media/backgrounds/world.jpg</texture><aspectratio>scale</aspectratio><include>VisibleFadeEffect</include></control>-->
+    <!--<control type="button" id="50"><texturefocus /><texturenofocus /><onleft>7000</onleft><onright>7000</onright><onup>7000</onup><ondown>7000</ondown><onclick /></control>-->
+    <control type="group">
+      <description>WEATHER INFO</description>
+      <posx>-40</posx>
+      <posy>90</posy>
+      <visible>System.HasNetwork</visible>
+      <control type="group" id="1000">
+        <description>WEATHER TODAY</description>
+        <visible>true</visible>
+        <posx>115</posx>
+        <posy>20</posy>
+        <width>225</width>
+        <height>300</height>
+        <control type="image">
+          <description>CURRENT CONDITION ICON</description>
+          <texture>$INFO[Window.Property(Current.ConditionIcon)]</texture>
+          <posx>128</posx>
+          <posy>12</posy>
+          <width>128</width>
+          <height>128</height>
+          <aspectratio align="center" aligny="center">keep</aspectratio>
+        </control>
+        <control type="label">
+          <description>CURRENT CONDITION LABEL</description>
+          <label>[B][UPPERCASE]$INFO[Window.Property(Current.Condition)][/UPPERCASE][/B]</label>
+          <posx>263</posx>
+          <posy>90</posy>
+          <width>460</width>
+          <height>20</height>
+          <font>HelveticaNeueLT_Std_32</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>shadow</shadowcolor>
+          <align>left</align>
+        </control>
+        <control type="label">
+          <description>CURRENT TEMP</description>
+          <label>$INFO[Window.Property(Current.Temperature)]$INFO[System.TemperatureUnits]</label>
+          <posx>258</posx>
+          <posy>45</posy>
+          <width>120</width>
+          <height>20</height>
+          <font>HelveticaNeueLT_Std_42</font>
+          <align>left</align>
+          <textcolor>white</textcolor>
+          <shadowcolor>shadow</shadowcolor>
+        </control>
+        <control type="group">
+          <visible>true</visible>
+          <posx>258</posx>
+          <!-- Feels Like -->
+          <control type="label">
+            <label>[B][COLOR black]$LOCALIZE[402]: [/COLOR][/B][COLOR white]$INFO[Window.Property(Current.FeelsLike)]$INFO[System.TemperatureUnits][/COLOR]</label>
+            <posx>5</posx>
+            <posy>135</posy>
+            <width>400</width>
+            <height>20</height>
+            <font>Font_Date</font>
+            <align>left</align>
+          </control>
+          <!-- Uv Index -->
+          <control type="label">
+            <label>[B][COLOR black]$LOCALIZE[403]: [/COLOR][/B] [COLOR white]$INFO[Window.Property(Current.UVIndex)][/COLOR]</label>
+            <posx>5</posx>
+            <posy>155</posy>
+            <width>255</width>
+            <height>20</height>
+            <font>Font_Date</font>
+            <align>left</align>
+          </control>
+          <!-- Dew Point -->
+          <control type="label">
+            <label>[B][COLOR black]$LOCALIZE[405]: [/COLOR][/B] [COLOR white]$INFO[Window.Property(Current.DewPoint)][/COLOR]</label>
+            <width>255</width>
+            <height>20</height>
+            <posx>5</posx>
+            <posy>175</posy>
+            <font>Font_Date</font>
+            <align>left</align>
+          </control>
+          <!-- Humidity -->
+          <control type="label">
+            <label>[B][COLOR black]$LOCALIZE[406]: [/COLOR][/B] [COLOR white]$INFO[Window.Property(Current.Humidity)][/COLOR]</label>
+            <width>255</width>
+            <height>20</height>
+            <posx>5</posx>
+            <posy>195</posy>
+            <font>Font_Date</font>
+            <align>left</align>
+            <textcolor>SettingsDetail</textcolor>
+          </control>
+          <!-- Wind -->
+          <control type="label">
+            <label>[B][COLOR black]$LOCALIZE[404]: [/COLOR][/B] [COLOR white]$INFO[Window.Property(Current.Wind)][/COLOR]</label>
+            <width>285</width>
+            <height>20</height>
+            <posx>5</posx>
+            <posy>215</posy>
+            <font>Font_Date</font>
+            <align>left</align>
+            <textcolor>SettingsDetail</textcolor>
+          </control>
+        </control>
+        <animation type="WindowOpen">
+          <effect type="fade" start="0" end="100" time="600" delay="100" />
+          <effect type="zoom" start="50,50" end="100,100" center="auto" time="500" delay="100" tween="back" asing="out" />
+        </animation>
+        <animation type="WindowClose">
+          <effect type="fade" start="100" end="0" time="400" delay="500" />
+          <effect type="zoom" end="50,50" start="100,100" center="auto" time="500" delay="500" />
+        </animation>
+      </control>
+      <control type="group">
+        <description>NEXT DAYS</description>
+        <posx>360</posx>
+        <posy>300</posy>
+        <visible>true</visible>
+        <control type="group">
+          <description>DAY1</description>
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>200</width>
+          <height>300</height>
+          <control type="label">
+            <description>DAY LABEL</description>
+            <label>$INFO[Window.Property(Day1.Title)]</label>
+            <posx>0</posx>
+            <posy>10</posy>
+            <width>200</width>
+            <height>20</height>
+            <align>center</align>
+            <font>Font_SettingsHeading</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>55000000</shadowcolor>
+          </control>
+          <control type="label" id="34">
+            <description>CONDITION</description>
+            <label>$INFO[Window.Property(Day1.Outlook)]</label>
+            <posx>0</posx>
+            <posy>50</posy>
+            <width>200</width>
+            <height>35</height>
+            <align>center</align>
+            <font>Font_Date</font>
+            <textcolor>black</textcolor>
+          </control>
+          <control type="image" id="35">
+            <description>CONDITION ICON</description>
+            <posx>0</posx>
+            <posy>125</posy>
+            <width>200</width>
+            <height>128</height>
+            <texture>$INFO[Window.Property(Day1.OutlookIcon)]</texture>
+            <aspectratio align="center" aligny="top">keep</aspectratio>
+          </control>
+          <control type="group">
+            <description>HIGH TEMP </description>
+            <control type="label">
+              <label>$LOCALIZE[393]</label>
+              <posx>0</posx>
+              <posy>80</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+              <label>[B]$INFO[Window.Property(Day1.HighTemp)] $INFO[System.TemperatureUnits][/B]</label>
+              <posx>0</posx>
+              <posy>100</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>white</textcolor>
+              <shadowcolor>55000000</shadowcolor>
+            </control>
+          </control>
+          <control type="group">
+            <description>LOW TEMP</description>
+            <control type="label">
+              <label>$LOCALIZE[391]</label>
+              <posx>100</posx>
+              <posy>80</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+              <label>[B]$INFO[Window.Property(Day1.LowTemp)] $INFO[System.TemperatureUnits][/B]</label>
+              <posx>100</posx>
+              <posy>100</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>white</textcolor>
+              <shadowcolor>55000000</shadowcolor>
+            </control>
+          </control>
+          <animation type="WindowOpen">
+            <effect type="fade" start="0" end="100" time="600" delay="300" />
+            <effect type="zoom" start="50,50" end="100,100" center="auto" time="500" delay="300" tween="back" asing="out" />
+          </animation>
+          <animation type="WindowClose">
+            <effect type="fade" start="100" end="0" time="400" delay="200" />
+            <effect type="zoom" end="50,50" start="100,100" center="auto" time="500" delay="500" />
+          </animation>
+        </control>
+        <control type="group">
+          <description>DAY2</description>
+          <posx>201</posx>
+          <posy>0</posy>
+          <width>200</width>
+          <height>300</height>
+          <control type="label">
+            <description>DAY LABEL</description>
+            <label>$INFO[Window.Property(Day2.Title)]</label>
+            <posx>0</posx>
+            <posy>10</posy>
+            <width>200</width>
+            <height>20</height>
+            <align>center</align>
+            <font>Font_SettingsHeading</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>55000000</shadowcolor>
+          </control>
+          <control type="label" id="34">
+            <description>CONDITION</description>
+            <label>$INFO[Window.Property(Day2.Outlook)]</label>
+            <posx>0</posx>
+            <posy>50</posy>
+            <width>200</width>
+            <height>35</height>
+            <align>center</align>
+            <font>Font_Date</font>
+            <textcolor>black</textcolor>
+          </control>
+          <control type="image" id="35">
+            <description>CONDITION ICON</description>
+            <posx>0</posx>
+            <posy>125</posy>
+            <width>200</width>
+            <height>128</height>
+            <texture>$INFO[Window.Property(Day2.OutlookIcon)]</texture>
+            <aspectratio align="center" aligny="top">keep</aspectratio>
+          </control>
+          <control type="group">
+            <description>HIGH TEMP </description>
+            <control type="label">
+              <label>$LOCALIZE[393]</label>
+              <posx>0</posx>
+              <posy>80</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+              <label>[B]$INFO[Window.Property(Day2.HighTemp)] $INFO[System.TemperatureUnits][/B]</label>
+              <posx>0</posx>
+              <posy>100</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>white</textcolor>
+              <shadowcolor>55000000</shadowcolor>
+            </control>
+          </control>
+          <control type="group">
+            <description>LOW TEMP</description>
+            <control type="label">
+              <label>$LOCALIZE[391]</label>
+              <posx>100</posx>
+              <posy>80</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+              <label>[B]$INFO[Window.Property(Day2.LowTemp)] $INFO[System.TemperatureUnits][/B]</label>
+              <posx>100</posx>
+              <posy>100</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>white</textcolor>
+              <shadowcolor>55000000</shadowcolor>
+            </control>
+          </control>
+          <animation type="WindowOpen">
+            <effect type="fade" start="0" end="100" time="600" delay="300" />
+            <effect type="zoom" start="50,50" end="100,100" center="auto" time="500" delay="300" tween="back" asing="out" />
+          </animation>
+          <animation type="WindowClose">
+            <effect type="fade" start="100" end="0" time="400" delay="200" />
+            <effect type="zoom" end="50,50" start="100,100" center="auto" time="500" delay="500" />
+          </animation>
+        </control>
+        <control type="group">
+          <description>DAY3</description>
+          <posx>402</posx>
+          <posy>0</posy>
+          <width>200</width>
+          <height>300</height>
+          <control type="label">
+            <description>DAY LABEL</description>
+            <label>$INFO[Window.Property(Day3.Title)]</label>
+            <posx>0</posx>
+            <posy>10</posy>
+            <width>200</width>
+            <height>20</height>
+            <align>center</align>
+            <font>Font_SettingsHeading</font>
+            <textcolor>white</textcolor>
+            <shadowcolor>55000000</shadowcolor>
+          </control>
+          <control type="label" id="34">
+            <description>CONDITION</description>
+            <label>$INFO[Window.Property(Day3.Outlook)]</label>
+            <posx>0</posx>
+            <posy>50</posy>
+            <width>200</width>
+            <height>35</height>
+            <align>center</align>
+            <font>Font_Date</font>
+            <textcolor>black</textcolor>
+          </control>
+          <control type="image" id="35">
+            <description>CONDITION ICON</description>
+            <posx>0</posx>
+            <posy>125</posy>
+            <width>200</width>
+            <height>128</height>
+            <texture>$INFO[Window.Property(Day3.OutlookIcon)]</texture>
+            <aspectratio align="center" aligny="top">keep</aspectratio>
+          </control>
+          <control type="group">
+            <description>HIGH TEMP </description>
+            <control type="label">
+              <label>$LOCALIZE[393]</label>
+              <posx>0</posx>
+              <posy>80</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+              <label>[B]$INFO[Window.Property(Day3.HighTemp)] $INFO[System.TemperatureUnits][/B]</label>
+              <posx>0</posx>
+              <posy>100</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>white</textcolor>
+              <shadowcolor>55000000</shadowcolor>
+            </control>
+          </control>
+          <control type="group">
+            <description>LOW TEMP</description>
+            <control type="label">
+              <label>$LOCALIZE[391]</label>
+              <posx>100</posx>
+              <posy>80</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>black</textcolor>
+            </control>
+            <control type="label">
+              <label>[B]$INFO[Window.Property(Day3.LowTemp)] $INFO[System.TemperatureUnits][/B]</label>
+              <posx>100</posx>
+              <posy>100</posy>
+              <width>100</width>
+              <height>20</height>
+              <font>Font_Date</font>
+              <align>center</align>
+              <textcolor>white</textcolor>
+              <shadowcolor>55000000</shadowcolor>
+            </control>
+          </control>
+          <animation type="WindowOpen">
+            <effect type="fade" start="0" end="100" time="600" delay="300" />
+            <effect type="zoom" start="50,50" end="100,100" center="auto" time="500" delay="300" tween="back" asing="out" />
+          </animation>
+          <animation type="WindowClose">
+            <effect type="fade" start="100" end="0" time="400" delay="200" />
+            <effect type="zoom" end="50,50" start="100,100" center="auto" time="500" delay="500" />
+          </animation>
+        </control>
+      </control>
+    </control>
+    <!-- view options -->
+    <control type="image">
+      <visible>ControlGroup(7000).HasFocus</visible>
+      <include>Dimensions_Fullscreen</include>
+      <texture>common/7000_focus.png</texture>
+      <animation effect="fade" start="0" end="100" time="600">Visible</animation>
+      <animation effect="fade" start="100" end="0" time="600">Hidden</animation>
+    </control>
+    <control type="image">
+      <!-- Floor -->
+      <posx>180</posx>
+      <posy>650</posy>
+      <width>880</width>
+      <height>70</height>
+      <texture>backdrops/test2.png</texture>
+      <visible allowhiddenfocus="true">ControlGroup(7000).HasFocus + !Skin.HasSetting(LockViews)</visible>
+      <include>Animation_ViewOptions_whitebar</include>
+    </control>
+    <control type="grouplist" id="7000">
+      <posx>70</posx>
+      <include>WindowMenuVars</include>
+      <posy>680</posy>
+      <!-- location -->
+      <control type="spincontrol" id="3">
+        <description>hidden location control</description>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1</width>
+        <height>1</height>
+        <visible>false</visible>
+      </control>
+      <control type="button" id="7001">
+        <label>$INFO[Weather.Location]</label>
+        <include>WeatherMenuButton</include>
+        <onclick>Control.Message(3,movedown)</onclick>
+      </control>
+      <!-- refresh -->
+      <control type="button" id="2">
+        <label>184</label>
+        <include>WeatherMenuButton</include>
+      </control>
+      <!-- settings -->
+      <control type="button" id="4">
+        <label>8</label>
+        <include>WeatherMenuButton</include>
+        <onclick>ActivateWindow(weathersettings)</onclick>
+      </control>
+    </control>
+    <control type="grouplist">
+      <posx>70</posx>
+      <include>WindowMenuVars</include>
+      <posy>657</posy>
+      <control type="button" id="7040">
+        <include>WeatherMenuLabel</include>
+        <label>396</label>
+      </control>
+      <control type="button" id="7041">
+        <include>WeatherMenuLabel</include>
+        <label>8</label>
+      </control>
+      <control type="button" id="7042">
+        <include>WeatherMenuLabel</include>
+        <label>5</label>
+      </control>
+    </control>
+    <!-- Heading -->
+    <control type="group">
+      <posx>25</posx>
+      <posy>15</posy>
+      <include>Animation_SlideDownFadeOut</include>
+      <control type="label">
+        <!-- LOC -->
+        <posy>-5</posy>
+        <label>[B]$LOCALIZE[31251]:[/B] $INFO[Weather.Location]</label>
+        <width>960</width>
+        <font>Font_Bartowski_Movies_Title</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <align>left</align>
+        <include>Animation_SlideDownFadeOut</include>
+      </control>
+      <control type="label">
+        <!-- LOC -->
+        <label>[B]$LOCALIZE[31252]:[/B] $INFO[Window.Property(Updated)]</label>
+        <include>Global_HeadingDetailVars</include>
+      </control>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes"?>
+<strings>
+  <!-- Main Labels -->
+  <string id="31007">Plugins</string>
+  <!-- GOOD -->
+  <string id="31024">Pagina</string>
+  <!-- GOOD -->
+  <string id="31025">Itens</string>
+  <!-- GOOD -->
+  <string id="31326">Criado</string>
+  <string id="31327">Resolução</string>
+  <string id="31029">Desabilitar Views</string>
+  <!-- GOOD -->
+  <!-- Settings labels -->
+  <string id="31032">Desabilitar Clock</string>
+  <!-- GOOD -->
+  <string id="31033">Scroll Plot for Movies and TV</string>
+  <string id="31034">Disable Media Flags</string>
+  <string id="31035">Ativar marcação de Filmes Assistidos</string>
+  <string id="31036">Ativar marcação de Seriados Assistidos</string>
+  <string id="31037">Bloquear Views (Modo Jukebox)</string>
+  <string id="31038">Opções de Visualizações em Músicas</string>
+  <string id="31039">Usar posters ao invés de Visualizações</string>
+  <string id="31040">Usar JukeBox ao tocar em tela cheia</string>
+  <string id="31041">Usar poster escurecido ao tocar em tela cheia</string>
+  <string id="31042">Esconder itens do Menu Principal</string>
+  <string id="31043">Definir opções para Seriados</string>
+  <string id="31044">Usar Posters para a sessão de TV</string>
+  <string id="31045">Usar Banners para a sessão de TV</string>
+  <string id="31047">Desabilitar Views de Filmes e TV</string>
+  <!-- GOOD -->
+  <!--VIEWS -->
+  <string id="31048">16x9</string>
+  <string id="31049">Banner</string>
+  <string id="31213">Mural</string>
+  <string id="31051">Painel</string>
+  <string id="31052">Paisagem</string>
+  <string id="31053">Paisagem 3D</string>
+  <string id="31054">Painel Inferior</string>
+  <string id="31062">Poster</string>
+  <string id="31063">Showcase</string>
+  <string id="31064">Muro</string>
+  <string id="31065">Desabilitar Views de Músicas</string>
+  <string id="31066">Jukebox</string>
+  <string id="31250">Banner 3D</string>
+  <string id="31245">Poster em Paisagem</string>
+  <!--MORE COMMON PHRASES -->
+  <string id="31067">Gerenciador de Arquivos</string>
+  <!-- GOOD -->
+  <string id="31073">MUTE</string>
+  <!-- GOOD -->
+  <string id="31074">Hora Atual</string>
+  <!-- GOOD -->
+  <string id="31075">Hora do Fim</string>
+  <!-- GOOD -->
+  <string id="31076">Modo Jukebox</string>
+  <!-- GOOD -->
+  <string id="31079">Títulos</string>
+  <!-- GOOD -->
+  <string id="31081">Recentes</string>
+  <!-- GOOD -->
+  <string id="31082">Creditos</string>
+  <string id="31086">Exibir Poster</string>
+  <!-- GOOD -->
+  <string id="31088">Tipo de Exibição</string>
+  <!-- GOOD -->
+  <string id="31094">Showcase</string>
+  <!-- GOOD -->
+  <string id="31095">ASSISTIR</string>
+  <string id="31096">Exibir</string>
+  <!-- GOOD -->
+  <string id="31097">Esconder</string>
+  <!-- GOOD -->
+  <string id="31098">Assistidos</string>
+  <string id="31099">TÍTULO</string>
+  <string id="31200">Exibir</string>
+  <!-- GOOD -->
+  <string id="31201">Desabilitar</string>
+  <!-- GOOD -->
+  <string id="31202">Usar Logo</string>
+  <!-- GOOD -->
+  <string id="31203">Sem Logo</string>
+  <!-- GOOD -->
+  <string id="31204">Desabilitar Flags</string>
+  <!-- GOOD -->
+  <string id="31205">Exibir Flags</string>
+  <!-- GOOD -->
+  <string id="31206">Miniaturas Extras</string>
+  <!-- GOOD -->
+  <string id="31207">FLAGS</string>
+  <string id="31208">Título</string>
+  <string id="31209">TV</string>
+  <!-- GOOD -->
+  <string id="31210">Miniaturas de Posters</string>
+  <string id="31211">Miniaturas 16x9</string>
+  <string id="31212">Theater</string>
+  <string id="31214">Dark View</string>
+  <!-- GOOD -->
+  <string id="31215">Exibir botão de legenda</string>
+  <!-- GOOD -->
+  <string id="31216">Caminho do Script:</string>
+  <!-- GOOD -->
+  <string id="31217">Ativar Script de Home Theater</string>
+  <string id="31218">Opções de Energia</string>
+  <string id="31219">landscape.jpg</string>
+  <!-- GOOD -->
+  <string id="31220">Cache de Miniatura</string>
+  <!-- GOOD -->
+  <string id="31221">Utilizar tema de acordo com condição do tempo</string>
+  <string id="31226">Classificação</string>
+  <!-- GOOD -->
+  <string id="31229">Gravado em</string>
+  <!-- GOOD -->
+  <string id="31230">Exibida em</string>
+  <!-- GOOD -->
+  <string id="31231">Foi ao ar em</string>
+  <!-- GOOD -->
+  <string id="31232">VOLTAR</string>
+  <string id="31233">Escolha uma música</string>
+  <!-- GOOD -->
+  <string id="31234">em</string>
+  <!-- GODD -->
+  <string id="31235">VOLTAR</string>
+  <string id="31237">Pressiona "Baixo" para Trailer</string>
+  <string id="31238">Pressione "X" para Parar</string>
+  <string id="31240">Pressione "Esquerda" para Trailer</string>
+  <string id="31241">Exibir Widget de Tempo</string>
+  <string id="31242">Definir Timer</string>
+  <!-- GOOD -->
+  <string id="31243">Cancelar Timer</string>
+  <!-- GOOD -->
+  <string id="31244">Menu Principal Horizontal</string>
+  <string id="31246">Exibir parcela</string>
+  <string id="31247">Ativar Relógio Global</string>
+  <string id="31248">Usar Now Playing Global menor para Musicas</string>
+  <string id="31249">Baixar Logotipo</string>
+  <string id="31251">Localização</string>
+  <string id="31252">Última atualização</string>
+  <!-- GOOD -->
+  <string id="31253">Últimos Albuns</string>
+  <!-- GOOD -->
+  <string id="31254">3 Dias - Mini</string>
+  <string id="31255">4 Dias - Full</string>
+  <string id="31256">Configurações Globais</string>
+  <string id="31257">Usar plano de fundo de músicas</string>
+  <string id="31258">Usar plano de fundo aleatório</string>
+  <string id="31259">Opções do Menu Principal</string>
+  <string id="31260">Adicionar itens personalizados para o Menu Principal</string>
+  <string id="31261">Favoritos Personalizados</string>
+  <string id="31262">Definir Rótulo</string>
+  <string id="31263">Baixar Logotipos automaticamente</string>
+  <string id="31264">Baixar Logotipos Agora</string>
+  <string id="31265">Ao clicar no botão acima, o Jukebox irá verificar todos os seriados existentes em sua biblioteca e irá fazer o download do logotipo apropriado, caso encontre.</string>
+  <!-- Playlist Editor labels -->
+  <string id="31055">Abrir lista de reprodução</string>
+  <string id="31056">Salvar lista de reprodução</string>
+  <string id="31057">Fechar lista de reprodução</string>
+  <string id="31058">Arquivos de música do sistema</string>
+  <string id="31059">Lista de reprodução atual</string>
+  <string id="31060">Este arquivo está dividido em partes, selecione qual parte você deseja tocar.</string>
+  <string id="31061">Atualmente Selecionado</string>
+  <!-- Confluence Labels -->
+  <string id="91000">Altere suas</string>
+  <string id="31110">Alterar Fundos do Menu Principal</string>
+  <string id="31113">Imagem Única</string>
+  <!-- GOOD -->
+  <string id="31114">Múltiplas Imagens</string>
+  <!-- GOOD -->
+  <!-- Description Labels  -->
+  <string id="31106">Opções diversas</string>
+  <string id="31115">Personalizador</string>
+  <!-- GOOD -->
+  <string id="31116">Aplicativos Adicionais</string>
+  <!-- GOOD -->
+  <string id="31117">Exibir Conteúdo Recente no Menu Principal</string>
+  <string id="31118">Verificar se está usando uma versão à mesclar(**)</string>
+  <string id="31323">Novos Filmes</string>
+  <string id="31309">Memória Utilizada:</string>
+  <string id="31200">Atalhos</string>
+  <string id="31122">Previsão do Tempo</string>
+  <string id="31324">Novos Episódios</string>
+  <!-- good -->
+  <string id="31325">Opções de Lista de Reprodução</string>
+  <string id="31126">Exibir Letra da Música</string>
+  <string id="31127">CAMINHO PARA SCRIPT LYRICS</string>
+  <string id="31128">JukeboxMC Lyrics</string>
+  <string id="31129">Ativar Download de Legenda do Filme</string>
+  <string id="31130">PATH PARA SCRIPT LEGENDAS</string>
+  <string id="31400">[B]CONFIGURAÇÕES DE APARÊNCIA[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver</string>
+  <string id="31401">[B]CONFIGURAÇÕES DE VIDEO[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts</string>
+  <string id="31402">[B]CONFIGURAÇÕES DE MUSICA[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options</string>
+  <string id="31403">[B]CONFIGURAÇÕES DE IMAGEM[/B][CR][CR]Set picture listing options · Configure slideshows</string>
+  <string id="31404">[B]CONFIGURAÇÕES DE PREVISÃO DO TEMPO[/B][CR][CR]Set three cities to collect weather information</string>
+  <string id="31405">[B]CONFIGURAÇÕES DE REDE[/B][CR][CR]Setup control of Raven via UPnP and HTTP · Configure file sharing[CR]Set internet access options</string>
+  <string id="31406">[B]CONFIGURAÇÕES DO SISTEMA[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock</string>
+  <string id="31407">[B]CONFIGURAÇÕES DO SKIN[/B][CR][CR]Setup the Night skin · Add and remove home menu items[CR]Change skin backgrounds</string>
+  <string id="31408">[B]CONFIGURAÇÕES DE APLICATIVOS ADICIONAIS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from Raven.org[CR]Modify Add-on settings</string>
+  <string id="31420">[B][COLOR=white]Não foi detectado um Disco.[/COLOR][/B][CR][CR]Por favor insira um disco em seu drive e tente novamente ou cancele</string>
+  <string id="31421">Selecione seu Perfil de Usuário[CR]para logar e continue</string>
+  <string id="31319">Perfil Selecionado</string>
+  <string id="31320">Último Acesso</string>
+  <!-- NEW 6/12-->
+  <string id="31003">Lista de Reprodução Personalizada</string>
+  <string id="31004">Seriados</string>
+  <string id="31005">Esta opção irá permitir mais informações ao selecionar ou pausar um filme</string>
+  <string id="31006">PosterInfo</string>
+  <string id="31008">Desligar</string>
+  <!-- GOOD -->
+  <string id="31119">Ativar Botão de Script Personalizado(**)</string>
+  <string id="31120">RÓTULO DO BOTÃO</string>
+  <string id="31121">CAMINHO DO SCRIPT</string>
+  <!-- NEW 6/20-->
+  <string id="31090">Ordem</string>
+  <string id="31093">Seqüencia</string>
+  <!-- NEW 6/22-->
+  <string id="31266">Ativar Posters Extras - Permite exibição aleatória de Posters no modo biblioteca</string>
+  <string id="31267">Usuário precisa da pasta 'extrafanart' no diretório do Seriado ou Filme(**)</string>
+  <!-- NEW 6/23-->
+  <string id="31268">Logotipo</string>
+  <string id="31269">Usar um arquivo landcape.jpg ao invés da miniatura padrão para TV(**)</string>
+  <string id="31270">Usuário precisa salvar uma imagem 'landcape.jpg' no diretório do Seriado ou Filme(**)</string>
+  <!-- NEW 6/23-->
+  <string id="40281">Itens</string>
+  <string id="31271">Posicionar Menu Principal no Inferior da Tela</string>
+  <string id="31272">Aplicativos</string>
+  <string id="31273">Aplicativos Instalados</string>
+  <!-- NEW 7/24-->
+  <string id="31274">NOW PLAYING</string>
+  <string id="31275">Couve Flower</string>
+</strings>

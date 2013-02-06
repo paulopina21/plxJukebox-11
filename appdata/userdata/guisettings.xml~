@@ -1,0 +1,570 @@
+<settings>
+    <mymusic>
+        <scanning>
+            <isscanning>false</isscanning>
+        </scanning>
+    </mymusic>
+    <viewstates>
+        <musicnavalbums>
+            <viewmode>65594</viewmode>
+            <sortmethod>12</sortmethod>
+            <sortorder>1</sortorder>
+        </musicnavalbums>
+        <musicfiles>
+            <viewmode>65586</viewmode>
+            <sortmethod>1</sortmethod>
+            <sortorder>1</sortorder>
+        </musicfiles>
+    </viewstates>
+    <audio>
+        <mute>false</mute>
+        <volumelevel>-720</volumelevel>
+        <premutevolumelevel>0</premutevolumelevel>
+        <dynamicrangecompression>0</dynamicrangecompression>
+    </audio>
+    <resolutions>
+        <resolution>
+            <description>Windowed</description>
+            <subtitles>635</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>0.000000</refreshrate>
+            <output></output>
+            <xrandrid></xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1172</right>
+                <bottom>659</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1366x768</description>
+            <subtitles>741</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>0.000000</refreshrate>
+            <output></output>
+            <xrandrid></xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1366</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <audiocds>
+        <autorun>false</autorun>
+        <bitrate>192</bitrate>
+        <compressionlevel>5</compressionlevel>
+        <encoder>3</encoder>
+        <quality>0</quality>
+        <recordingpath pathversion="1">select writable folder</recordingpath>
+        <trackpathformat>%A - %B/[%N. ][%A - ]%T</trackpathformat>
+        <usecddb>true</usecddb>
+    </audiocds>
+    <audiooutput>
+        <ac3passthrough>true</ac3passthrough>
+        <audiodevice>Default</audiodevice>
+        <channellayout>0</channellayout>
+        <customdevice></customdevice>
+        <custompassthrough></custompassthrough>
+        <dontnormalizelevels>true</dontnormalizelevels>
+        <dtspassthrough>true</dtspassthrough>
+        <mode>0</mode>
+        <passthroughaac>false</passthroughaac>
+        <passthroughdevice>iec958</passthroughdevice>
+        <passthroughmp1>false</passthroughmp1>
+        <passthroughmp2>false</passthroughmp2>
+        <passthroughmp3>false</passthroughmp3>
+    </audiooutput>
+    <cache>
+        <harddisk>256</harddisk>
+    </cache>
+    <cacheaudio>
+        <dvdrom>256</dvdrom>
+        <internet>256</internet>
+        <lan>256</lan>
+    </cacheaudio>
+    <cachedvd>
+        <dvdrom>2048</dvdrom>
+        <lan>2048</lan>
+    </cachedvd>
+    <cacheunknown>
+        <internet>4096</internet>
+    </cacheunknown>
+    <cachevideo>
+        <dvdrom>2048</dvdrom>
+        <internet>4096</internet>
+        <lan>2048</lan>
+    </cachevideo>
+    <debug>
+        <screenshotpath pathversion="1">select writable folder</screenshotpath>
+        <showloginfo>false</showloginfo>
+    </debug>
+    <dvds>
+        <automenu>false</automenu>
+        <autorun>false</autorun>
+        <playerregion>0</playerregion>
+    </dvds>
+    <filelists>
+        <allowfiledeletion>false</allowfiledeletion>
+        <ignorethewhensorting>true</ignorethewhensorting>
+        <showaddsourcebuttons>true</showaddsourcebuttons>
+        <showextensions>true</showextensions>
+        <showhidden>false</showhidden>
+        <showparentdiritems>false</showparentdiritems>
+    </filelists>
+    <input>
+        <enablemouse>false</enablemouse>
+        <peripherals></peripherals>
+        <remoteaskeyboard>false</remoteaskeyboard>
+    </input>
+    <karaoke>
+        <autopopupselector>false</autopopupselector>
+        <charset>DEFAULT</charset>
+        <enabled>false</enabled>
+        <export></export>
+        <font>arial.ttf</font>
+        <fontcolors>0</fontcolors>
+        <fontheight>36</fontheight>
+        <importcsv></importcsv>
+    </karaoke>
+    <locale>
+        <charset>DEFAULT</charset>
+        <country>UK (24h)</country>
+        <language>Portuguese (Brazil)</language>
+        <timezone>America/Sao_Paulo</timezone>
+        <timezonecountry>Brazil</timezonecountry>
+    </locale>
+    <lookandfeel>
+        <enablerssfeeds>true</enablerssfeeds>
+        <font>Default</font>
+        <rssedit></rssedit>
+        <skin>skin.raven</skin>
+        <skincolors>SKINDEFAULT</skincolors>
+        <skintheme>SKINDEFAULT</skintheme>
+        <skinzoom>0</skinzoom>
+        <soundskin>OFF</soundskin>
+        <startupwindow>10000</startupwindow>
+    </lookandfeel>
+    <masterlock>
+        <lockcode>-</lockcode>
+        <maxretries>3</maxretries>
+        <startuplock>false</startuplock>
+    </masterlock>
+    <musicfiles>
+        <findremotethumbs>true</findremotethumbs>
+        <librarytrackformat></librarytrackformat>
+        <librarytrackformatright></librarytrackformatright>
+        <nowplayingtrackformat></nowplayingtrackformat>
+        <nowplayingtrackformatright></nowplayingtrackformatright>
+        <trackformat>[%N. ]%A - %T</trackformat>
+        <trackformatright>%D</trackformatright>
+        <usetags>true</usetags>
+    </musicfiles>
+    <musiclibrary>
+        <albumsscraper>metadata.albums.allmusic.com</albumsscraper>
+        <artistsscraper>metadata.artists.allmusic.com</artistsscraper>
+        <backgroundupdate>false</backgroundupdate>
+        <cleanup></cleanup>
+        <downloadinfo>true</downloadinfo>
+        <enabled>true</enabled>
+        <export></export>
+        <import></import>
+        <showcompilationartists>true</showcompilationartists>
+        <updateonstartup>false</updateonstartup>
+    </musiclibrary>
+    <musicplayer>
+        <autoplaynextitem>true</autoplaynextitem>
+        <crossfade>5</crossfade>
+        <crossfadealbumtracks>true</crossfadealbumtracks>
+        <queuebydefault>true</queuebydefault>
+        <replaygainavoidclipping>false</replaygainavoidclipping>
+        <replaygainnogainpreamp>89</replaygainnogainpreamp>
+        <replaygainpreamp>89</replaygainpreamp>
+        <replaygaintype>1</replaygaintype>
+        <visualisation>visualization.projectm</visualisation>
+    </musicplayer>
+    <myvideos>
+        <extractflags>true</extractflags>
+        <extractthumb>true</extractthumb>
+        <replacelabels>true</replacelabels>
+        <selectaction>1</selectaction>
+        <treatstackasfile>true</treatstackasfile>
+    </myvideos>
+    <network>
+        <bandwidth>0</bandwidth>
+        <httpproxypassword></httpproxypassword>
+        <httpproxyport>8080</httpproxyport>
+        <httpproxyserver></httpproxyserver>
+        <httpproxyusername></httpproxyusername>
+        <usehttpproxy>false</usehttpproxy>
+    </network>
+    <pictures>
+        <displayresolution>10</displayresolution>
+        <generatethumbs>true</generatethumbs>
+        <showvideos>true</showvideos>
+        <useexifrotation>true</useexifrotation>
+        <usetags>true</usetags>
+    </pictures>
+    <powermanagement>
+        <displaysoff>0</displaysoff>
+        <shutdownstate>1</shutdownstate>
+        <shutdowntime>0</shutdowntime>
+    </powermanagement>
+    <pvrmanager>
+        <enabled>false</enabled>
+    </pvrmanager>
+    <scrapers>
+        <langfallback>false</langfallback>
+        <moviesdefault>metadata.themoviedb.org</moviesdefault>
+        <musicvideosdefault>metadata.yahoomusic.com</musicvideosdefault>
+        <tvshowsdefault>metadata.tvdb.com</tvshowsdefault>
+    </scrapers>
+    <screensaver>
+        <mode>screensaver.xbmc.builtin.dim</mode>
+        <preview></preview>
+        <settings></settings>
+        <time>3</time>
+        <usedimonpause>true</usedimonpause>
+        <usemusicvisinstead>true</usemusicvisinstead>
+    </screensaver>
+    <scrobbler>
+        <lastfmpass></lastfmpass>
+        <lastfmsubmit>false</lastfmsubmit>
+        <lastfmsubmitradio>false</lastfmsubmitradio>
+        <lastfmusername></lastfmusername>
+        <librefmpass></librefmpass>
+        <librefmsubmit>false</librefmsubmit>
+        <librefmusername></librefmusername>
+    </scrobbler>
+    <services>
+        <airplay>false</airplay>
+        <airplaypassword></airplaypassword>
+        <devicename>XBMC</devicename>
+        <esallinterfaces>false</esallinterfaces>
+        <escontinuousdelay>25</escontinuousdelay>
+        <esenabled>true</esenabled>
+        <esinitialdelay>750</esinitialdelay>
+        <esmaxclients>20</esmaxclients>
+        <esport>9777</esport>
+        <esportrange>10</esportrange>
+        <upnprenderer>false</upnprenderer>
+        <upnpserver>false</upnpserver>
+        <useairplaypassword>false</useairplaypassword>
+        <webserver>false</webserver>
+        <webserverpassword></webserverpassword>
+        <webserverport>80</webserverport>
+        <webserverusername>xbmc</webserverusername>
+        <webskin>webinterface.default</webskin>
+        <zeroconf>false</zeroconf>
+    </services>
+    <slideshow>
+        <displayeffects>true</displayeffects>
+        <shuffle>false</shuffle>
+        <staytime>5</staytime>
+    </slideshow>
+    <smb>
+        <winsserver></winsserver>
+        <workgroup>WORKGROUP</workgroup>
+    </smb>
+    <subtitles>
+        <align>0</align>
+        <charset>DEFAULT</charset>
+        <color>1</color>
+        <custompath pathversion="1"></custompath>
+        <font>arial.ttf</font>
+        <height>28</height>
+        <overrideassfonts>false</overrideassfonts>
+        <style>1</style>
+    </subtitles>
+    <system>
+        <playlistspath pathversion="1">special://profile/playlists/</playlistspath>
+    </system>
+    <videolibrary>
+        <actorthumbs>true</actorthumbs>
+        <backgroundupdate>false</backgroundupdate>
+        <cleanup></cleanup>
+        <enabled>true</enabled>
+        <export></export>
+        <flattentvshows>1</flattentvshows>
+        <groupmoviesets>false</groupmoviesets>
+        <import></import>
+        <seasonthumbs>true</seasonthumbs>
+        <showunwatchedplots>true</showunwatchedplots>
+        <updateonstartup>false</updateonstartup>
+    </videolibrary>
+    <videoplayer>
+        <adjustrefreshrate>false</adjustrefreshrate>
+        <displayresolution>10</displayresolution>
+        <errorinaspect>0</errorinaspect>
+        <maxspeedadjust>5.000000</maxspeedadjust>
+        <pauseafterrefreshchange>0</pauseafterrefreshchange>
+        <rendermethod>0</rendermethod>
+        <resamplequality>1</resamplequality>
+        <stretch43>0</stretch43>
+        <synctype>2</synctype>
+        <teletextenabled>true</teletextenabled>
+        <usedisplayasclock>false</usedisplayasclock>
+        <usepbo>true</usepbo>
+    </videoplayer>
+    <videoscreen>
+        <guicalibration></guicalibration>
+        <haslcd>false</haslcd>
+        <resolution>0</resolution>
+        <screen>-1</screen>
+        <screenmode>WINDOW</screenmode>
+        <testpattern></testpattern>
+        <vsync>2</vsync>
+    </videoscreen>
+    <weather>
+        <addon>weather.wunderground</addon>
+        <addonsettings></addonsettings>
+        <currentlocation>1</currentlocation>
+    </weather>
+    <window>
+        <height>659</height>
+        <width>1172</width>
+    </window>
+    <skinsettings>
+        <setting type="bool" name="skin.confluence.homepageShowRecentlyAdded">false</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.confluence.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.confluence.homepageMusicinfo">false</setting>
+        <setting type="bool" name="skin.confluence.homepageVideoinfo">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoMoviesButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoTVShowsButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.confluence.HomeMenuNoProgramsButton">false</setting>
+        <setting type="bool" name="skin.confluence.homepageWeatherinfo">false</setting>
+        <setting type="bool" name="skin.confluence.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.confluence.HideBackGroundFanart">false</setting>
+        <setting type="bool" name="skin.confluence.TVShowsUsePosters">false</setting>
+        <setting type="bool" name="skin.confluence.AutoScroll">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoMoviesButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoTVShowsButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoSettingsButton">false</setting>
+        <setting type="bool" name="skin.raven.debuggrid">false</setting>
+        <setting type="bool" name="skin.raven.library_global_clock">false</setting>
+        <setting type="bool" name="skin.raven.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.raven.Files_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.no_media_flags">false</setting>
+        <setting type="bool" name="skin.raven.music_files_fanart">false</setting>
+        <setting type="bool" name="skin.raven.autoscroll">false</setting>
+        <setting type="bool" name="skin.raven.noflowalbum">false</setting>
+        <setting type="bool" name="skin.raven.darkshowcase">false</setting>
+        <setting type="bool" name="skin.raven.LockViews">false</setting>
+        <setting type="bool" name="skin.raven.MusicShowcaseFanart">false</setting>
+        <setting type="bool" name="skin.raven.use_clock">false</setting>
+        <setting type="bool" name="skin.raven.LibraryUpdated">true</setting>
+        <setting type="bool" name="skin.raven.hidefanart">false</setting>
+        <setting type="bool" name="skin.raven.ShowBackgroundVideo">false</setting>
+        <setting type="bool" name="skin.raven.ShowcaseFanart">false</setting>
+        <setting type="bool" name="skin.raven.zune_music">false</setting>
+        <setting type="bool" name="skin.raven.3dmusic_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.RSS_only_on_home">false</setting>
+        <setting type="bool" name="skin.raven.movieoverlays">true</setting>
+        <setting type="bool" name="skin.raven.no_Showcase">false</setting>
+        <setting type="bool" name="skin.raven.HideStudioInfo">false</setting>
+        <setting type="bool" name="skin.raven.HideMediaInfo">false</setting>
+        <setting type="bool" name="skin.raven.HideIMDBInfo">false</setting>
+        <setting type="bool" name="skin.raven.IMDBNumbers">false</setting>
+        <setting type="bool" name="skin.raven.no_Logo">false</setting>
+        <setting type="bool" name="skin.raven.extrathumbs">false</setting>
+        <setting type="bool" name="skin.raven.3dLandscape_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.clean_poster">false</setting>
+        <setting type="bool" name="skin.raven.3dland_down_plot">false</setting>
+        <setting type="bool" name="skin.raven.3dbanner_fanart">false</setting>
+        <setting type="bool" name="skin.raven.Poster_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.PosterPlus">false</setting>
+        <setting type="bool" name="skin.raven.ClearTitle">false</setting>
+        <setting type="bool" name="skin.raven.Wall_fanart">false</setting>
+        <setting type="bool" name="skin.raven.no_clock">false</setting>
+        <setting type="bool" name="skin.raven.SubsScript_Enable">false</setting>
+        <setting type="bool" name="skin.raven.hometheater">false</setting>
+        <setting type="bool" name="skin.raven.FanartNoVisualisation">false</setting>
+        <setting type="bool" name="skin.raven.DarkFullscreenMusicPlayback">false</setting>
+        <setting type="bool" name="skin.raven.vis_music_backdrops">false</setting>
+        <setting type="bool" name="skin.raven.vis_photos_backdrops">false</setting>
+        <setting type="bool" name="skin.raven.FullscreenJukebox">false</setting>
+        <setting type="bool" name="skin.raven.horizontal_home">false</setting>
+        <setting type="bool" name="skin.raven.horizontal_bottom_align">false</setting>
+        <setting type="bool" name="skin.raven.homepageHideRecentlyAdded">false</setting>
+        <setting type="bool" name="skin.raven.HomepageWeatherWidget">false</setting>
+        <setting type="bool" name="skin.raven.conditions_weather_backdrop">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoScriptsButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNofavouritesButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoShutdownButton">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom4">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom5">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom6">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom7">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom8">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom9">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom10">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom3">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom2">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom1">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton1">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton2">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton3">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton4">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton5">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton6">false</setting>
+        <setting type="bool" name="skin.raven.TVPosters">true</setting>
+        <setting type="bool" name="skin.raven.TVBanners">false</setting>
+        <setting type="bool" name="skin.raven.tvoverlays">true</setting>
+        <setting type="bool" name="skin.raven.landscape_jpg">false</setting>
+        <setting type="bool" name="skin.raven.extrafanart">false</setting>
+        <setting type="bool" name="skin.raven.no_16x9">false</setting>
+        <setting type="bool" name="skin.raven.no_BannerPanel">false</setting>
+        <setting type="bool" name="skin.raven.no_Episode">false</setting>
+        <setting type="bool" name="skin.raven.no_Panel">false</setting>
+        <setting type="bool" name="skin.raven.no_Landscape">false</setting>
+        <setting type="bool" name="skin.raven.no_3DLandscape">false</setting>
+        <setting type="bool" name="skin.raven.no_LandPanel">false</setting>
+        <setting type="bool" name="skin.raven.no_Poster">false</setting>
+        <setting type="bool" name="skin.raven.no_Wall">false</setting>
+        <setting type="bool" name="skin.raven.no_WallPanel">false</setting>
+        <setting type="bool" name="skin.raven.no_Landscape_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.no_3dbanner">false</setting>
+        <setting type="bool" name="skin.raven.no_Jukebox">false</setting>
+        <setting type="bool" name="skin.raven.no_MusicShowcase">false</setting>
+        <setting type="bool" name="skin.raven.no_MusicWall">false</setting>
+        <setting type="bool" name="skin.raven.no_Shelf">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub2">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub3">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub4">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub5">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub6">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub7">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub8">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub9">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub10">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom11">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub11">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom12">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub12">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom13">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub13">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom14">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub14">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom15">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub15">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom16">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub16">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom17">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub17">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom18">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub18">false</setting>
+        <setting type="bool" name="skin.raven.showbackground">false</setting>
+        <setting type="bool" name="skin.raven.debugmode">false</setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Weather_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Pictures_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Video_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Movies_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_TVShow_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Music_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Programs_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_PlayDisc_Folder"></setting>
+        <setting type="string" name="skin.confluence.Home_Custom_Back_Settings_Folder"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeVideosButton5"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeMusicButton5"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton1"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton2"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton3"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton4"></setting>
+        <setting type="string" name="skin.confluence.HomePictureButton5"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton1"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton2"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton3"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton4"></setting>
+        <setting type="string" name="skin.confluence.HomeProgramButton5"></setting>
+        <setting type="string" name="skin.raven.SubtitleScript_Path"></setting>
+        <setting type="string" name="skin.raven.CustomMusicFolder"></setting>
+        <setting type="string" name="skin.raven.CustomPicturesFolder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom4_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom4_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom5_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom5_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom6_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom6_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom7_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom7_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom8_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom8_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom9_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom9_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom10_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom10_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom3_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom3_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom2_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom2_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom1_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom1_Folder"></setting>
+        <setting type="string" name="skin.raven.CustomVideosFolder"></setting>
+        <setting type="string" name="skin.raven.CustomMoviesFolder"></setting>
+        <setting type="string" name="skin.raven.CustomTVShowsFolder"></setting>
+        <setting type="string" name="skin.raven.Home_Custom_Back_Weather_Folder"></setting>
+        <setting type="string" name="skin.raven.Home_Custom_Back_Scripts_Folder"></setting>
+        <setting type="string" name="skin.raven.CustomfavouritesFolder"></setting>
+        <setting type="string" name="skin.raven.CustomSettingsFolder"></setting>
+        <setting type="string" name="skin.raven.Home_Custom_Back_Shutdown_Folder"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton1_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton1_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton2_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton2_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton3_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton3_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton4_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton4_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton5_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton5_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton6_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton6_Path"></setting>
+        <setting type="string" name="skin.raven.MoviesCustom"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom1_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom2_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom3_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom4_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom5_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom6_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom7_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom8_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom9_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom10_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom11_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom11_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom12_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom12_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom13_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom13_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom14_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom14_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom15_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom15_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom16_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom16_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom17_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom17_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom18_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom18_Path"></setting>
+    </skinsettings>
+</settings>

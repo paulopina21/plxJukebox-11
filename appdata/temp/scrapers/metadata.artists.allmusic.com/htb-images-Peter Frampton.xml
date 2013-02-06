@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335025952</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Peter Frampton]]></original_keywords>
+	<keywords><![CDATA[+peter +frampton]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>5</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>360</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Peter Frampton]]></title>
+			<filename><![CDATA[Frampton.jpg]]></filename>
+			<mbid>638206ee-0e3d-47cf-9769-d73330b15a87</mbid>
+			<filesize>210840</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>702</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Peter Frampton]]></title>
+			<filename><![CDATA[peter_frampton.jpg]]></filename>
+			<mbid>638206ee-0e3d-47cf-9769-d73330b15a87</mbid>
+			<filesize>140650</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>12370</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Peter Frampton]]></title>
+			<filename><![CDATA[peter-frampton-thumb.jpg]]></filename>
+			<mbid>638206ee-0e3d-47cf-9769-d73330b15a87</mbid>
+			<filesize>79746</filesize>
+			<dimensions>720x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>12371</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Peter Frampton]]></title>
+			<filename><![CDATA[peter-frampton-thumb-2.jpg]]></filename>
+			<mbid>638206ee-0e3d-47cf-9769-d73330b15a87</mbid>
+			<filesize>107648</filesize>
+			<dimensions>720x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>12375</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Peter Frampton]]></title>
+			<filename><![CDATA[peter-frampton-bd.jpg]]></filename>
+			<mbid>638206ee-0e3d-47cf-9769-d73330b15a87</mbid>
+			<filesize>169656</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

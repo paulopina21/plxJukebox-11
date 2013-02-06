@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335026332</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Ray Charles]]></original_keywords>
+	<keywords><![CDATA[+ray +charles]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>5</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>1124</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Ray Charles]]></title>
+			<filename><![CDATA[raycharles.jpg]]></filename>
+			<mbid>2ce02909-598b-44ef-a456-151ba0a3bd70</mbid>
+			<filesize>221272</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>2736</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Ray Charles]]></title>
+			<filename><![CDATA[fanart_45.jpg]]></filename>
+			<mbid>2ce02909-598b-44ef-a456-151ba0a3bd70</mbid>
+			<filesize>1045047</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>8454</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Ray Charles]]></title>
+			<filename><![CDATA[Ray_Charles4.jpg]]></filename>
+			<mbid>2ce02909-598b-44ef-a456-151ba0a3bd70</mbid>
+			<filesize>94884</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>11972</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Blues Brothers]]></title>
+			<filename><![CDATA[blues-brothers-thumb-2.jpg]]></filename>
+			<caption><![CDATA[The Blues Brothers with Ray Charles]]></caption>
+			<mbid>7252abc2-dfc8-4aa6-889f-2d168b265403</mbid>
+			<filesize>115370</filesize>
+			<dimensions>720x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>15556</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Ray Charles]]></title>
+			<filename><![CDATA[ray_charles_1.jpg]]></filename>
+			<mbid>2ce02909-598b-44ef-a456-151ba0a3bd70</mbid>
+			<filesize>483996</filesize>
+			<dimensions>1080x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

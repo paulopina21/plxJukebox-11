@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335024088</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Jorge Aragão]]></original_keywords>
+	<keywords><![CDATA[+jorge +aragão]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>1</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>2452</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Jorge Aragão]]></title>
+			<filename><![CDATA[1003-1jorge_aragao.jpg]]></filename>
+			<mbid>23751694-aad0-45f7-b3bf-bdade42466f6</mbid>
+			<filesize>227432</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335023192</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Gilberto Gil]]></original_keywords>
+	<keywords><![CDATA[+gilberto +gil]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>18303</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Gilberto Gil]]></title>
+			<filename><![CDATA[gilberto_gil.jpg]]></filename>
+			<keywords><![CDATA[Gilberto Gil]]></keywords>
+			<caption><![CDATA[Gilberto Gil]]></caption>
+			<mbid>cf6b70f6-2616-481c-912c-0263cabfc974</mbid>
+			<filesize>568479</filesize>
+			<dimensions>900x900</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>18341</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Gilberto Gil]]></title>
+			<filename><![CDATA[gilberto_gil~0.jpg]]></filename>
+			<keywords><![CDATA[Gilberto Gil]]></keywords>
+			<caption><![CDATA[Gilberto Gil]]></caption>
+			<mbid>cf6b70f6-2616-481c-912c-0263cabfc974</mbid>
+			<filesize>234367</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

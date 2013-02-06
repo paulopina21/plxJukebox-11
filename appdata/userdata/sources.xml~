@@ -1,0 +1,37 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+        <source>
+            <name>TvShows</name>
+            <path pathversion="1">/media/laureon/Media/TvShows/</path>
+        </source>
+        <source>
+            <name>backup</name>
+            <path pathversion="1">/media/laureon/backup/</path>
+        </source>
+        <source>
+            <name>MusicVideos (3)</name>
+            <path pathversion="1">/media/MediaBox/MusicVideos/</path>
+        </source>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+        <source>
+            <name>Music</name>
+            <path pathversion="1">/media/MediaBox/Music/</path>
+        </source>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+        <source>
+            <name>1080p</name>
+            <path pathversion="1">D:\Images\Wallpapers\1080p\</path>
+        </source>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+    </files>
+</sources>

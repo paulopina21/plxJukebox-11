@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335023613</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Infected Mushroom]]></original_keywords>
+	<keywords><![CDATA[+infected +mushroom]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>3698</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Infected Mushroom]]></title>
+			<filename><![CDATA[fanart_12_6.jpg]]></filename>
+			<mbid>eab76c9f-ff91-4431-b6dd-3b976c598020</mbid>
+			<filesize>1329798</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>8390</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Infected Mushroom]]></title>
+			<filename><![CDATA[infected-mushroom.png]]></filename>
+			<mbid>eab76c9f-ff91-4431-b6dd-3b976c598020</mbid>
+			<filesize>545052</filesize>
+			<dimensions>600x600</dimensions>
+			<rating>10000</rating>
+			<votes>1</votes>
+		</image>
+		<image>
+			<id>23611</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Infected Mushroom]]></title>
+			<filename><![CDATA[infectedmushroom_2_fanart.jpg]]></filename>
+			<mbid>eab76c9f-ff91-4431-b6dd-3b976c598020</mbid>
+			<filesize>1013226</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

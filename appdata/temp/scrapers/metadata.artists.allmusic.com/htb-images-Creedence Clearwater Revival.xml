@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335021608</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Creedence Clearwater Revival]]></original_keywords>
+	<keywords><![CDATA[+creedence +clearwater +revival]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>4</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>200</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Creedence Clearwater Revival]]></title>
+			<filename><![CDATA[CCR.jpg]]></filename>
+			<mbid>109958eb-a335-4c5e-907e-597ff4c6af46</mbid>
+			<filesize>503037</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>2146</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Creedence Clearwater Revival]]></title>
+			<filename><![CDATA[Creedence_Clearwater_Revival.jpg]]></filename>
+			<mbid>109958eb-a335-4c5e-907e-597ff4c6af46</mbid>
+			<filesize>188226</filesize>
+			<dimensions>1080x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>2616</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Creedence Clearwater Revival]]></title>
+			<filename><![CDATA[fanart_8_11.jpg]]></filename>
+			<caption><![CDATA[Creedence Clearwater Revival]]></caption>
+			<mbid>109958eb-a335-4c5e-907e-597ff4c6af46</mbid>
+			<filesize>381878</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14644</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Creedence Clearwater Revival]]></title>
+			<filename><![CDATA[Creedence_Clearwater_Revival_1.jpg]]></filename>
+			<keywords><![CDATA[Creedence Clearwater Revival]]></keywords>
+			<mbid>109958eb-a335-4c5e-907e-597ff4c6af46</mbid>
+			<filesize>219206</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>10000</rating>
+			<votes>1</votes>
+		</image>
+	</images>
+</search>

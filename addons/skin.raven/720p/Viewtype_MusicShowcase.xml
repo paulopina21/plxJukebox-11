@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<includes>
+  <include name="Viewtype_MusicShowcase">
+    <!--<control type="image"><include>Dimensions_Fullscreen</include><texture>raven/music/background.png</texture></control>-->
+    <!--<control type="image"><include>Dimensions_Fullscreen</include><texture>raven/common/file-black-background.png</texture><visible>Control.IsVisible(58)</visible></control>-->
+    <!--<control type="image">/* Floor */<visible>Control.IsVisible(58)</visible><posx>0</posx><posy>0</posy><width>1280</width><height>720</height><texture>raven/dark-overlay.png</texture></control>-->
+    <!--ALBUM LIST-->
+    <control type="fixedlist" id="58">
+      <posx>-116</posx>
+      <posy>435</posy>
+      <height>515</height>
+      <width>1920</width>
+      <onleft>58</onleft>
+      <onright>58</onright>
+<!--      <onup>666</onup> -->
+<!--      <ondown>666</ondown> -->
+      <viewtype label="AlbumCovers">list</viewtype>
+      <orientation>horizontal</orientation>
+      <focusposition>3</focusposition>
+      <scrolltime>200</scrolltime>
+      <preloaditems>2</preloaditems>
+      <pagecontrol>68</pagecontrol>
+<!--      <include>Animation_ZoomInZoomOut</include>-->
+      <include>Animation_Jukebox_AlbumList</include>
+      <visible allowhiddenfocus="true">!Player.HasVideo | [Container.OnNext | Container.OnPrevious] | [Container(666).OnNext | Container(666).OnPrevious]</visible>
+      <itemlayout width="210" height="235">
+        <control type="group">
+          <posx>0</posx>
+          <posy>30</posy>
+          <control type="image">
+            <description>ALBUM MIRROR</description>
+            <posx>0</posx>
+            <posy>202</posy>
+            <width>200</width>
+            <height>200</height>
+            <fadetime>200</fadetime>
+            <include>Animation_HiddenByInfo</include>
+            <colordiffuse>69FFFFFF</colordiffuse>
+            <texture diffuse="raven/diffuse-album.png" flipy="true">$INFO[ListItem.Icon]</texture>
+            <aspectratio scalediffuse="true">stretch</aspectratio>
+          </control>
+          <control type="image">
+            <description>ALBUM SHADOW</description>
+            <posx>-2</posx>
+            <posy>-3</posy>
+            <width>207</width>
+            <height>207</height>
+            <colordiffuse>CC000000</colordiffuse>
+            <texture border="10">raven/common/border-rounded-album-shadow.png</texture>
+            <animation type="Focus" reversible="false">
+              <effect type="fade" start="0" end="100" time="800" delay="100" />
+            </animation>
+          </control>
+          <control type="image">
+            <description>ALBUM COVER</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>200</width>
+            <height>200</height>
+            <fadetime>200</fadetime>
+            <include>Animation_HiddenByInfo</include>
+            <texture background="true" diffuse="raven/diffuse-album.png">$INFO[ListItem.Icon]</texture>
+            <aspectratio scalediffuse="true">stretch</aspectratio>
+          </control>
+          <control type="image">
+            <description>EMBOSS EFFECT</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>200</width>
+            <height>200</height>
+            <fadetime>200</fadetime>
+            <texture background="false" diffuse="postermatteNF.png">raven/common/effect-rounded-album-emboss.png</texture>
+            <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
+            <colordiffuse>Emboss_Music</colordiffuse>
+          </control>
+        </control>
+      </itemlayout>
+      <focusedlayout width="254" height="515">
+        <control type="group">
+          <posx>11</posx>
+          <posy>20</posy>
+          <control type="image">
+            <description>SELECTED ALBUM MIRROR</description>
+            <posx>-14</posx>
+            <posy>240</posy>
+            <width>250</width>
+            <height>250</height>
+            <fadetime>000</fadetime>
+            <include>Animation_PosterInfoSlide_Showcase</include>
+            <colordiffuse>69FFFFFF</colordiffuse>
+            <texture diffuse="raven/diffuse-album.png" flipy="true">$INFO[ListItem.Icon]</texture>
+            <aspectratio scalediffuse="false">stretch</aspectratio>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" center="auto" start="80" end="100" time="250" tween="back" easing="out" />
+            </animation>
+          </control>
+          <control type="image">
+            <description>SELECTION GLOW</description>
+            <posx>-21</posx>
+            <posy>-24</posy>
+            <width>264</width>
+            <height>265</height>
+            <texture border="10">raven/common/border-selected-rounded.png</texture>
+            <include>Animation_PosterInfoSlide_Showcase</include>
+            <aspectratio scalediffuse="false">keep</aspectratio>
+            <animation type="Focus" reversible="false">
+              <effect type="fade" start="0" end="100" time="800" delay="100" />
+            </animation>
+            <include>Animation_Pulse</include>
+          </control>
+          <control type="image">
+            <description>SELECTED ALBUM COVER</description>
+            <posx>-14</posx>
+            <posy>-16</posy>
+            <width>250</width>
+            <height>250</height>
+            <fadetime>200</fadetime>
+            <include>Animation_PosterInfoSlide_Showcase</include>
+            <texture diffuse="raven/diffuse-album.png">$INFO[ListItem.Icon]</texture>
+            <aspectratio scalediffuse="false">stretch</aspectratio>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" center="auto" start="80" end="100" time="250" tween="back" easing="out" />
+            </animation>
+          </control>
+          <control type="image">
+            <description>EMBOSS EFFECT</description>
+            <posx>-14</posx>
+            <posy>-16</posy>
+            <width>250</width>
+            <height>250</height>
+            <fadetime>200</fadetime>
+            <colordiffuse>Emboss_Music</colordiffuse>
+            <texture background="false" diffuse="postermatteNF.png">raven/common/effect-rounded-album-emboss.png</texture>
+            <aspectratio scalediffuse="false" align="center">stretch</aspectratio>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" center="auto" start="80" end="100" time="250" tween="back" easing="out" />
+            </animation>
+          </control>
+        </control>
+      </focusedlayout>
+    </control>
+    <!--<control type="panel" id="9000"><posx>70</posx><posy>15</posy><align>center</align><width>1200</width><height>200</height><onleft>9000</onleft><onright>9000</onright><onup>9000</onup><ondown>603</ondown><pagecontrol>-</pagecontrol><focusposition>1</focusposition><orientation>horizontal</orientation><scrolltime tween="sine" easing="out">200</scrolltime><preloaditems>0</preloaditems><itemlayout width="130" height="200">/*<control type="image"><posx>0</posx><posy>0</posy><width>256</width><height>130</height><texture>raven/home/ThumbNF.png</texture></control>*/<control type="image"><posx>0</posx><posy>60</posy><width>80</width><height>80</height><texture>$INFO[Listitem.ActualIcon]</texture><aspectratio>keep</aspectratio></control>/*<control type="label"><posx>0</posx><posy>0</posy><width>256</width><height>20</height><font>Font_HomeMenu_NF</font><textcolor>black</textcolor><selectedcolor>blue</selectedcolor><align>center</align><aligny>center</aligny><label>$INFO[ListItem.Label]</label></control>*/</itemlayout><focusedlayout width="130" height="200">/*<control type="image"><posx>0</posx><posy>30</posy><width>150</width><height>150</height><texture>raven/home/IconFO.png</texture><visible>Control.HasFocus(9000)</visible><include>VisibleFadeEffect</include><aspectratio>keep</aspectratio></control>*//*<control type="image"><posx>0</posx><posy>30</posy><width>150</width><height>150</height><texture>raven/home/IconNF.png</texture><visible>!Control.HasFocus(9000)</visible><include>VisibleFadeEffect</include><aspectratio>keep</aspectratio></control>*/<control type="image"><posx>0</posx><posy>40</posy><width>80</width><height>80</height><texture>$INFO[Listitem.ActualIcon]</texture>/*<bordertexture border="5">confluence/button-nofocus.png</bordertexture>*//*<bordersize>0</bordersize>*/<aspectratio>keep</aspectratio><animation type="focus" reversible="false"><effect type="slide" end="0,-20" time="200" center="auto"></effect><effect type="zoom" end="120" time="200" center="auto"></effect></animation><animation type="unfocus" reversible="true"><effect type="slide" end="0,20" time="400" center="auto"></effect></animation></control><control type="label"><posx>40</posx><posy>115</posy><width>300</width><height>20</height><font>Font_MainMenu</font><textcolor>white</textcolor><shadowcolor>shadow</shadowcolor><selectedcolor>blue</selectedcolor><align>center</align><aligny>center</aligny><label>$INFO[ListItem.Label]</label><animation type="focus" reversible="true"><effect type="fade" end="100" time="200" center="auto"></effect></animation><animation type="unfocus" reversible="true"><effect type="fade" end="0" time="200" center="auto"></effect></animation></control></focusedlayout><content><item id="4"><label>Apps</label><onclick>ActivateWindow(Programs,Addons,return)</onclick><icon>raven/home/menuicons/apps.png</icon><thumb>special://skin/backgrounds/apps.jpg</thumb><visible>false</visible></item><item id="1"><label>3</label><onclick>XBMC.ActivateWindow(MyVideoFiles)</onclick><icon>raven/home/menuicons/videos.png</icon><thumb>special://skin/backgrounds/videos.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoVideosButton)</visible></item><item id="2"><label>2</label><onclick>ActivateWindow(MyMusic,return)</onclick><icon>raven/home/menuicons/music.png</icon><thumb>special://skin/backgrounds/music.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoMusicButton)</visible></item><item id="3"><label>Filmes</label><onclick>XBMC.ActivateWindow(MyVideoLibrary,movietitles,return)</onclick><icon>raven/home/menuicons/movies.png</icon><thumb>special://skin/backgrounds/movies.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoMoviesButton) + Library.HasContent(Movies)</visible></item><item id="4"><label>Seriados</label><onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick><icon>raven/home/menuicons/tvshows.png</icon><thumb>special://skin/backgrounds/tvshows.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible></item><item id="5"><label>1</label><onclick>XBMC.ActivateWindow(MyPictures)</onclick><icon>raven/home/menuicons/pictures.png</icon><thumb>special://skin/backgrounds/pictures.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible></item><item id="6"><label>8</label><onclick>ActivateWindow(Weather)</onclick>/*<icon>raven/home/menuicons/weather.png</icon>*/<icon>$INFO[Weather.Conditions]</icon><thumb>special://skin/backgrounds/weather.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoWeatherButton)</visible></item><item id="7"><label>31020</label><onclick>PlayDVD()</onclick><icon>raven/home/menuicons/disc.png</icon><thumb>special://skin/backgrounds/opticaldrive.jpg</thumb><visible>System.HasMediadvd</visible></item><item id="8"><label>5</label><onclick>ActivateWindow(Settings)</onclick><icon>raven/home/menuicons/settings.png</icon><thumb>special://skin/backgrounds/settings.jpg</thumb><visible>!Skin.HasSetting(HomeMenuNoSettingsButton)</visible></item><item id="9"><label>13005</label><onclick>ActivateWindow(ShutdownMenu)</onclick><icon>raven/home/menuicons/power.png</icon><thumb>special://skin/backgrounds/power.jpg</thumb></item></content></control>-->
+    <!--<control type="fixedlist" id="51"><posx>20</posx><posy>90</posy><height>380</height><width>500</width><onup>666</onup><ondown>666</ondown><onleft>58</onleft><onright>58</onright><scrolltime>250</scrolltime><viewtype label="$LOCALIZE[744]">list</viewtype><orientation>vertical</orientation><focusposition>3</focusposition><movement>5</movement><pagecontrol>60</pagecontrol><include>Animation_HiddenByInfo</include><include>Animation_Viewtype_Files_LIST</include><itemlayout width="500" height="25">/*<control type="image"><fadetime>100</fadetime><posx>25</posx><posy>18</posy><width>40</width><height>34</height><texture background="true">$INFO[ListItem.Icon]</texture><aspectratio align="center" aligny="center">keep</aspectratio></control>*/<control type="label"><description>PLAYLIST ITEM</description><posx>20</posx><posy>4</posy><width>460</width><height>20</height><aligny>center</aligny><align>left</align><font>Font_Date</font><textcolor>white</textcolor><selectedcolor>copper</selectedcolor><shadowcolor>shadow</shadowcolor><label>[B]$INFO[ListItem.TrackNumber]$INFO[ListItem.Title,. ][COLOR copper]$INFO[ListItem.Duration, ][/COLOR][/B]</label></control></itemlayout><focusedlayout width="500" height="25"><control type="image"><posx>0</posx><posy>0</posy><width>495</width><height>32</height><texture>raven/common/selection_glow.png</texture><visible>true</visible><include>Animation_Selection_Pulse</include></control><control type="image"><posx>0</posx><posy>0</posy><width>495</width><height>32</height><texture>raven/common/selection_bar.png</texture><visible>true</visible><animation type="focus" reversible="false"><effect type="fade" end="100" time="100" center="auto" delay="50"></effect></animation></control><control type="label"><description>PLAYLIST ITEM</description><posx>20</posx><posy>4</posy><width>450</width><height>20</height><aligny>center</aligny><align>left</align><font>Font_Date</font><textcolor>black</textcolor><shadowcolor>none</shadowcolor><label>[B]$INFO[ListItem.TrackNumber]$INFO[ListItem.Title,. ][COLOR copper]$INFO[ListItem.Duration, ][/COLOR][/B]</label></control></focusedlayout><visible>Container(58).IsVisible()</visible></control>-->
+    <control type="fixedlist" id="666">
+      <viewtype label="31290">list</viewtype>
+      <posx>0</posx>
+      <posy>88</posy>
+      <width>933</width>
+      <height>370</height>
+      <scrolltime>200</scrolltime>
+      <orientation>vertical</orientation>
+      <movement>3</movement>
+      <focusposition>2</focusposition>
+      <onup>666</onup>
+      <ondown>666</ondown>
+      <pagecontrol>64</pagecontrol>
+      <visible allowhiddenfocus="false">Control.IsVisible(58) + [!Container(58).OnNext + !Container(58).OnPrevious]</visible>
+      <include>Animation_Jukebox_TrackList</include>
+      <itemlayout width="633" height="40">
+        <control type="group">
+          <posx>24</posx>
+          <posy>2</posy>
+          <control type="label">
+            <posx>50</posx>
+            <posy>-6</posy>
+            <width>50</width>
+            <height>60</height>
+            <align>right</align>
+            <aligny>top</aligny>
+            <label>$INFO[ListItem.TrackNumber]</label>
+            <font>Font_List_Item_Number</font>
+            <textcolor>copper</textcolor>
+            <selectedcolor>copper</selectedcolor>
+            <shadowcolor>CopperShadow</shadowcolor>
+          </control>
+          <control type="image">
+            <posx>55</posx>
+            <posy>7</posy>
+            <width>20</width>
+            <height>20</height>
+            <texture>overlays\common\$INFO[ListItem.Overlay]</texture>
+          </control>
+          <control type="label">
+            <posx>80</posx>
+            <posy>2</posy>
+            <width>410</width>
+            <height>20</height>
+            <align>left</align>
+            <label>$INFO[ListItem.Title]</label>
+            <font>Font_TrackTitle</font>
+            <textcolor>white</textcolor>
+            <selectedcolor>copper</selectedcolor>
+            <shadowcolor>shadow</shadowcolor>
+          </control>
+          <!--<control type="label"><posx>60</posx><posy>3</posy><width>633</width><height>60</height><align>left</align><label>$INFO[ListItem.Title]  ✔</label><font>Font_EpisodeTitleNF</font><textcolor>EpisodeTitle</textcolor><selectedcolor>TextSelected</selectedcolor><visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,videodb://5/) + [!Skin.HasSetting(HideTVWatchedOverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+          <control type="label">
+            <posx>60</posx>
+            <posy>17</posy>
+            <width>633</width>
+            <height>20</height>
+            <align>left</align>
+            <label>•  $INFO[ListItem.Duration]</label>
+            <font>Font_TrackDuration</font>
+            <textcolor>copper</textcolor>
+            <shadowcolor>CopperShadow</shadowcolor>
+            <selectedcolor>copper</selectedcolor>
+          </control>
+        </control>
+      </itemlayout>
+      <focusedlayout width="633" height="40">
+        <control type="image">
+          <animation effect="slide" start="0,0" end="0,40" time="600" condition="Container(666).OnNext">Conditional</animation>
+          <posx>-20</posx>
+          <posy>-2</posy>
+          <width>540</width>
+          <height>53</height>
+          <texture>raven/common/selection_bar_music.png</texture>
+        </control>
+<!--
+        <control type="image">
+          <animation effect="slide" start="0,0" end="0,40" time="600" condition="Container(666).OnNext">Conditional</animation>
+          <posx>-20</posx>
+          <posy>5</posy>
+          <width>540</width>
+          <height>40</height>
+          <texture>raven/controls/selection.png</texture>
+        </control>
+-->
+        <control type="group">
+          <posx>24</posx>
+          <posy>2</posy>
+          <control type="label">
+            <posx>50</posx>
+            <posy>-6</posy>
+            <width>50</width>
+            <height>60</height>
+            <align>right</align>
+            <aligny>top</aligny>
+            <label>$INFO[ListItem.TrackNumber]</label>
+            <font>Font_List_Item_Number</font>
+            <textcolor>copper</textcolor>
+            <selectedcolor>copper</selectedcolor>
+          </control>
+          <control type="image">
+            <posx>55</posx>
+            <posy>7</posy>
+            <width>20</width>
+            <height>20</height>
+            <texture>overlays\common\$INFO[ListItem.Overlay]</texture>
+          </control>
+          <control type="label">
+            <posx>80</posx>
+            <posy>2</posy>
+            <width>400</width>
+            <height>20</height>
+            <align>left</align>
+            <label>$INFO[ListItem.Title]</label>
+            <font>Font_TrackTitle</font>
+            <textcolor>white</textcolor>
+            <selectedcolor>copper</selectedcolor>
+            <shadowcolor></shadowcolor>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" start="81" end="100" time="300" tween="back" easing="out" />
+              <effect type="fade" start="30" end="100" time="600" />
+            </animation>
+            <scroll>true</scroll>
+          </control>
+          <!--<control type="label"><posx>60</posx><posy>3</posy><width>633</width><height>60</height><align>left</align><label>$INFO[ListItem.Title]  ✔</label><font>Font_EpisodeTitleNF</font><textcolor>EpisodeTitle</textcolor><selectedcolor>TextSelected</selectedcolor><visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,videodb://5/) + [!Skin.HasSetting(HideTVWatchedOverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+          <control type="label">
+            <posx>60</posx>
+            <posy>17</posy>
+            <width>633</width>
+            <height>20</height>
+            <align>left</align>
+            <label>•  $INFO[ListItem.Duration]</label>
+            <font>Font_TrackDuration</font>
+            <textcolor>copper</textcolor>
+            <selectedcolor>copper</selectedcolor>
+          </control>
+        </control>
+      </focusedlayout>
+      <!--<focusedlayout width="633" height="60">/*<control type="image"><posx>83</posx><posy>50</posy><width>253</width><height>139</height><texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture><aspectratio scalediffuse="false">keep</aspectratio><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /></animation><visible>IsEmpty(ListItem.Title)</visible></control>*//*<control type="image"><posx>83</posx><posy>50</posy><width>253</width><height>139</height><texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture><aspectratio scalediffuse="false">scale</aspectratio><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /></animation><visible>!IsEmpty(ListItem.Title)</visible></control>*//*<control type="image"><posx>70</posx><posy>37</posy><width>278</width><height>164</height><texture>episodeframe.png</texture><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /><effect type="fade" start="0" end="100" time="200" /></animation><visible>!IsEmpty(ListItem.Title) + [Skin.HasSetting(HideTVWatchedOverlays) | !stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>*//*<control type="image"><posx>70</posx><posy>37</posy><width>278</width><height>164</height><texture>episodeframewatched.png</texture><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /><effect type="fade" start="0" end="100" time="200" /></animation><visible>!IsEmpty(ListItem.Title) + [!Skin.HasSetting(HideTVWatchedOverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>*//*<control type="label"><posx>78</posx><posy>0</posy><width>600</width><label>$INFO[ListItem.Episode,,.] $INFO[ListItem.Title]</label><font>Font_EpisodeNumber</font>/*<font>Font_EpisodeTitleNF</font>*/<textcolor>EpisodeLabelF</textcolor><selectedcolor>TextSelected</selectedcolor><animation type="Focus" reversible="false" acceleration="40" tween="back" easing="InOut"><effect type="fade" start="50" end="100" time="250" acceleration="1" /><effect type="slide" start="+35,-60" end="0,0" time="200" acceleration="1" tween="easing" easing="InOut"></effect></animation><visible>!IsEmpty(ListItem.Title)</visible></control>*/<control type="label"><posx>50</posx><posy>0</posy><width>100</width><height>60</height><align>right</align><aligny>top</aligny><label>$INFO[ListItem.TrackNumber]</label><font>Font_TrackNumber</font><textcolor>copper</textcolor></control><control type="image"><posx>54</posx><posy>5</posy><width>20</width><height>20</height><texture>overlays\videos\$INFO[ListItem.Overlay]</texture><animation type="Focus" reversible="false"><effect type="zoom" start="81" end="100" time="300" tween="back" easing="out" /><effect type="fade" start="0" end="100" time="600" /></animation></control><control type="label"><posx>80</posx><posy>0</posy><width>633</width><height>60</height><align>left</align><label>$INFO[ListItem.Title]</label><font>Font_TrackTitle</font><textcolor>white</textcolor><shadowcolor>black</shadowcolor><visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,videodb://5/)</visible><animation type="Focus" reversible="false"><effect type="zoom" start="81" end="100" time="300" tween="back" easing="out" /><effect type="fade" start="30" end="100" time="600" /></animation></control><control type="label"><posx>60</posx><posy>25</posy><width>633</width><height>60</height><align>left</align><label>• $INFO[ListItem.Date,$LOCALIZE[20416]: ]</label><font>Font_EpisodeDetailNF</font><textcolor>EpisodeTitle</textcolor></control></focusedlayout>-->
+    </control>
+    <!--<control type="scrollbar" id="68"><include>Animation_ZoomInZoomOut</include><posx>20</posx><posy>350</posy><width>1240</width><height>18</height><visible allowhiddenfocus="true">Control.IsVisible(58) + Control.HasFocus(68)</visible><texturesliderbackground>osd/osd_progress_back1.png</texturesliderbackground><textureslidernibfocus>ScrollBarV_Nib_Focus1.png</textureslidernibfocus><onup>50</onup><ondown>50</ondown><showonepage>false</showonepage><orientation>horizontal</orientation><include>Animation_CommonFade</include></control>-->
+    <!--MUSIC LIST-->
+    <!--<control type="wraplist" id="59"><posx>-160</posx><posy>400</posy><height>515</height><width>1920</width><onleft>59</onleft><onright>59</onright><onup>69</onup><ondown>7000</ondown><viewtype label="$LOCALIZE[31063]">list</viewtype><orientation>horizontal</orientation><focusposition>3</focusposition><scrolltime>300</scrolltime><preloaditems>2</preloaditems><pagecontrol>69</pagecontrol><include>Animation_ZoomInZoomOut</include><visible>!Skin.HasSetting(no_MusicShowcase) + [Container.Content(artists) | Container.Content(albums) | Window.IsActive(musicfiles)]</visible><itemlayout width="230" height="245"><control type="group"><posx>0</posx><posy>30</posy><control type="image"><posx>0</posx><posy>0</posy><width>200</width><height>200</height><texture background="true" diffuse="raven/covermate.png">$INFO[ListItem.Icon]</texture><fadetime>200</fadetime><aspectratio scalediffuse="false">stretch</aspectratio><include>Animation_HiddenByInfo</include></control><control type="image"><posx>-11</posx><posy>-8</posy><width>222</width><height>216</height><texture>posterframeF.png</texture><colordiffuse>89FFFFFF</colordiffuse><include>Animation_HiddenByInfo</include><visible>Skin.HasSetting(MusicShowcaseFanart)</visible></control></control></itemlayout><focusedlayout width="254" height="515"><control type="group"><posx>0</posx><posy>20</posy><control type="image"><posx>-24</posx><posy>-24</posy><width>270</width><height>270</height><texture>raven/covershadow.png</texture><aspectratio scalediffuse="false">stretch</aspectratio><include>Animation_PosterInfoSlide_Showcase</include><animation type="Focus" reversible="false"><effect type="fade" start="0" end="100" time="800" delay="100" /></animation></control><control type="image"><posx>-14</posx><posy>-16</posy><width>250</width><height>250</height><texture diffuse="raven/covermate.png">$INFO[ListItem.Icon]</texture><fadetime>200</fadetime><aspectratio scalediffuse="false">stretch</aspectratio><include>Animation_PosterInfoSlide_Showcase</include><animation type="Focus" reversible="false"><effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" /></animation></control><control type="image"><posx>-29</posx><posy>-26</posy><width>280</width><height>270</height><texture>posterframeF.png</texture><include>Animation_PosterInfoSlide_Showcase</include><animation type="Focus" reversible="false"><effect type="zoom" center="auto" start="80" end="100" time="400" tween="back" easing="out" /><effect type="fade" start="60" end="60" time="400" /></animation></control></control></focusedlayout></control>-->
+    <!--<control type="scrollbar" id="69"><include>Animation_ZoomInZoomOut</include><posx>20</posx><posy>350</posy><width>1240</width><height>18</height><visible allowhiddenfocus="true">Control.IsVisible(59) + Control.HasFocus(69)</visible><texturesliderbackground>osd/osd_progress_back1.png</texturesliderbackground><textureslidernibfocus>ScrollBarV_Nib_Focus1.png</textureslidernibfocus><onup>50</onup><ondown>50</ondown><showonepage>false</showonepage><orientation>horizontal</orientation><include>Animation_CommonFade</include></control>-->
+    <!--<control type="group"><posx>80</posx><posy>350</posy><visible>!Container(9000).HasFocus(1) + !Container(9000).HasFocus(3) + !Container(9000).HasFocus(4) + !Container(9000).HasFocus(5)</visible><animation type="WindowOpen" reversible="false"><effect type="zoom" start="80" end="100" center="256,180" easing="out" tween="back" time="300" delay="100" /><effect type="fade" start="0" end="100" time="300" delay="100" /></animation><animation type="WindowClose" reversible="false"><effect type="zoom" start="100" end="80" center="256,180" easing="in" tween="back" time="300" /><effect type="fade" start="100" end="0" time="300" /></animation><animation type="Visible" reversible="false"><effect type="zoom" start="80" end="100" center="256,180" easing="out" tween="back" time="300" /><effect type="fade" start="0" end="100" time="300" /></animation><animation type="Hidden" reversible="false"><effect type="zoom" start="100" end="80" center="256,180" easing="in" tween="back" time="300" /><effect type="fade" start="100" end="0" time="300" /></animation><include>Window_OpenClose_Animation</include>/*WEATHER TODAY*/<control type="group"><visible>Container(9000).HasFocus(6)</visible><include>VisibleFadeEffect</include><control type="label"><description>Weather label</description><posx>5</posx><posy>5</posy><height>30</height><width>246</width><label>$INFO[Weather.Location]</label><align>center</align><aligny>center</aligny><font>font11</font><shadowcolor>black</shadowcolor></control><control type="image"><description>Weather Icon</description><posx>5</posx><posy>45</posy><width>246</width><height>140</height><aspectratio>keep</aspectratio><texture>$INFO[Weather.Conditions]</texture></control><control type="image"><posx>5</posx><posy>200</posy><width>246</width><height>1</height><texture>raven/home/separator.png</texture></control><control type="label"><description>Temp Label</description><posx>148</posx><posy>200</posy><height>30</height><width>138</width><label>$INFO[Window(Weather).Property(Current.Temperature)]</label><align>right</align><aligny>top</aligny><font>font50</font><shadowcolor>black</shadowcolor></control><control type="label"><description>Temp Label</description><posx>148</posx><posy>210</posy><height>20</height><width>138</width><label>$INFO[System.TemperatureUnits]</label><align>left</align><aligny>top</aligny><font>font13</font><shadowcolor>black</shadowcolor></control><control type="label"><description>Weather Conditions label</description><posx>5</posx><posy>275</posy><height>20</height><width>246</width><label>$INFO[Weather.Conditions]</label><align>center</align><aligny>center</aligny><font>font11</font><textcolor>grey</textcolor><shadowcolor>black</shadowcolor></control></control>/*SUBMENU ITEMS*/<control type="grouplist" id="9010"><posx>15</posx><posy>5</posy><width>300</width><height>300</height><align>top</align><onleft>9000</onleft><onright>9000</onright><onup>9000</onup><ondown>9000</ondown><itemgap>0</itemgap><visible>!Container(9000).HasFocus(5)</visible><include>VisibleFadeEffect</include>/* Start or buttons Used for the main MUSIC button */<control type="button" id="90111"><include>RavenHomeSubCommonValues</include><label>133</label><onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick><visible>Library.HasContent(Music)</visible><visible>Container(9000).HasFocus(2)</visible></control><control type="button" id="90122"><include>RavenHomeSubCommonValues</include><label>132</label><onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick><visible>Library.HasContent(Music)</visible><visible>Container(9000).HasFocus(2)</visible></control><control type="button" id="90123"><include>RavenHomeSubCommonValues</include><label>134</label><onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick><visible>Library.HasContent(Music)</visible><visible>Container(9000).HasFocus(2)</visible></control><control type="button" id="90124"><include>RavenHomeSubCommonValues</include><label>744</label><onclick>ActivateWindow(MusicFiles,Root)</onclick><visible>Container(9000).HasFocus(2)</visible></control>/* Start or buttons Used for the main Settings button */<control type="button" id="90111"><include>RavenHomeSubCommonValues</include><label>7</label><onclick>ActivateWindow(FileManager)</onclick><visible>Container(9000).HasFocus(8)</visible></control><control type="button" id="90182"><include>RavenHomeSubCommonValues</include><label>13200</label><onclick>ActivateWindow(Profiles)</onclick><visible>Container(9000).HasFocus(8)</visible></control><control type="button" id="90183"><include>RavenHomeSubCommonValues</include><label>130</label><onclick>ActivateWindow(SystemInfo)</onclick><visible>Container(9000).HasFocus(8)</visible></control>/* Start or buttons Used for the main Shutdown button */<control type="button" id="90111"><include>RavenHomeSubCommonValues</include><label>13005</label><onclick>XBMC.Powerdown()</onclick><visible>Container(9000).HasFocus(9)</visible></control><control type="togglebutton" id="90192"><description>Custom ShutdownTimer button</description><include>RavenHomeSubCommonValues</include><label>20144</label><altlabel>20151</altlabel><onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick><altclick>XBMC.CancelAlarm(shutdowntimer)</altclick><alttexturefocus border="5">raven/home/button-focus2.png</alttexturefocus><alttexturenofocus>-</alttexturenofocus><visible>Container(9000).HasFocus(9)</visible><usealttexture>System.HasAlarm(shutdowntimer)</usealttexture></control><control type="button" id="90193"><include>RavenHomeSubCommonValues</include><label>13013</label><onclick>XBMC.Reboot()</onclick><visible>Container(9000).HasFocus(9)</visible></control><control type="button" id="90194"><include>RavenHomeSubCommonValues</include><label>13011</label><onclick>XBMC.Suspend()</onclick><visible>Container(9000).HasFocus(9)</visible></control><control type="button" id="90195"><include>RavenHomeSubCommonValues</include><label>13009</label><onclick>XBMC.Quit()</onclick><visible>Container(9000).HasFocus(9)</visible></control><control type="button" id="90196"><include>RavenHomeSubCommonValues</include><label>$LOCALIZE[20126] $INFO[system.profilename]</label><onclick>System.Logoff</onclick><visible>Container(9000).HasFocus(9)</visible><visible>System.HasLoginScreen</visible><visible>System.Loggedon</visible></control><control type="label" id="90197"><description>Custom ShutdownTimer countdown label</description><height>70</height><width>240</width><label>$LOCALIZE[31026] [B]$INFO[System.Alarmpos][/B]</label><align>center</align><aligny>center</aligny><font>font11</font><textcolor>blue</textcolor><shadowcolor>black</shadowcolor><visible>Container(9000).HasFocus(9) + System.HasAlarm(shutdowntimer)</visible></control>/* Start or buttons Used for the main Optical Media button */<control type="button" id="90111"><include>RavenHomeSubCommonValues</include><label>13391</label><onclick>EjectTray()</onclick><visible>Container(9000).HasFocus(7)</visible></control></control></control>-->
+    <control type="group">
+      <description>SELECTION TITLE</description>
+      <visible>Control.IsVisible(666)</visible>
+      <include>Animation_Jukebox_SelectionTitle</include>
+  
+      <control type="label">
+        <!--Nome do Arquivo-->
+        <posx>0</posx>
+        <posy>10</posy>
+        <width>1280</width>
+        <height>30</height>
+        <align>center</align>
+        <font>Font_ArtistName</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <label>$INFO[ListItem.Label]</label>
+        <include>Animation_Bartowski_Context_Zoom</include>
+        <visible>IsEmpty(ListItem.Album)</visible>
+      </control>
+      <control type="label">
+        <!--Nome do Artista-->
+        <posx>30</posx>
+        <posy>20</posy>
+        <width>1280</width>
+        <height>30</height>
+        <align>left</align>
+        <font>Font_ArtistName</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <label>$INFO[ListItem.Artist]</label>
+        <include>Animation_Bartowski_Context_Zoom</include>
+        <visible>!IsEmpty(ListItem.Album)</visible>
+      </control>
+      <control type="label">
+        <!--Nome do Album-->
+        <posx>30</posx>
+        <posy>45</posy>
+        <width>610</width>
+        <height>50</height>
+        <align>left</align>
+        <font>Font_AlbumName</font>
+        <textcolor>copper</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <label>$INFO[ListItem.Album]</label>
+        <include>Animation_Bartowski_Context_Zoom</include>
+        <visible>!IsEmpty(ListItem.Album)</visible>
+        <scrollspeed>40</scrollspeed>
+        <scroll>true</scroll>
+      </control>
+    </control>
+    
+    
+    <control type="group">
+      <description>FAST FORWARD SELECTION TITLE</description>
+      <posy>240</posy><visible>Container(58).OnNext | Container(58).OnPrevious</visible>
+      <include>Animation_Jukebox_FastForwardInfo</include>
+  
+      <control type="label">
+        <!--SORT LETTER-->
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>1280</width>
+        <height>30</height>
+        <align>center</align><aligny>center</aligny>
+        <font>Font_SortLetter</font>
+        <textcolor>white</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <label>$INFO[ListItem.SortLetter]</label>
+        <include>Animation_Bartowski_Context_Zoom</include>
+        <visible>!IsEmpty(ListItem.Album)</visible>
+        
+      </control>
+      <control type="label">
+        <!--Nome do Artista-->
+        <posx>0</posx>
+        <posy>50</posy>
+        <width>1280</width>
+        <height>30</height>
+        <align>center</align>
+        <aligny>center</aligny><font>Font_ArtistName</font>
+        <textcolor>copper</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <label>$INFO[ListItem.Artist]</label>
+        <include>Animation_Bartowski_Context_Zoom</include>
+        <visible>!IsEmpty(ListItem.Album)</visible>
+        
+      </control>
+      
+    </control>
+   
+  </include>
+</includes>

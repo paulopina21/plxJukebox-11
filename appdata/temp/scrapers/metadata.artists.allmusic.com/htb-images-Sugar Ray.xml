@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335029293</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Sugar Ray]]></original_keywords>
+	<keywords><![CDATA[+sugar +ray]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>1</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>12700</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Sugar Ray]]></title>
+			<filename><![CDATA[sugarray.jpg]]></filename>
+			<mbid>9968756b-d504-4c90-a184-776ba1dd32ea</mbid>
+			<filesize>505039</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

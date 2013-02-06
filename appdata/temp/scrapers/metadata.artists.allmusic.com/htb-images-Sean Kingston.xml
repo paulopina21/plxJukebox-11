@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335027188</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Sean Kingston]]></original_keywords>
+	<keywords><![CDATA[+sean +kingston]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>4</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>7371</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Sean Kingston]]></title>
+			<filename><![CDATA[Sean_Kingston.jpg]]></filename>
+			<caption><![CDATA[Sean Kingston]]></caption>
+			<mbid>f7eb3be3-1065-4a53-94d4-e2d0c15c0b33</mbid>
+			<filesize>530610</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>11833</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Sean Kingston]]></title>
+			<filename><![CDATA[SeanKingstonColorPhoto001-1080p.jpg]]></filename>
+			<mbid>f7eb3be3-1065-4a53-94d4-e2d0c15c0b33</mbid>
+			<filesize>768864</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>20427</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Sean Kingston]]></title>
+			<filename><![CDATA[sean-kingston-1.jpg]]></filename>
+			<keywords><![CDATA[sean kingston]]></keywords>
+			<mbid>f7eb3be3-1065-4a53-94d4-e2d0c15c0b33</mbid>
+			<filesize>66783</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>20428</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Sean Kingston]]></title>
+			<filename><![CDATA[sean-kingston-2.jpeg]]></filename>
+			<keywords><![CDATA[sean kingston]]></keywords>
+			<mbid>f7eb3be3-1065-4a53-94d4-e2d0c15c0b33</mbid>
+			<filesize>91366</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

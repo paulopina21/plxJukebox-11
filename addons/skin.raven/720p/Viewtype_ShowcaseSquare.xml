@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<includes>
+  <include name="contents509list">
+    <visible>[Window.IsActive(501)|Window.IsActive(502)|Window.IsActive(1)|Window.IsActive(2) | stringcompare(Container.FolderPath,addons://sources/video/) | Window.IsActive(addonbrowser)] + Container.HasFolders</visible>
+    <posx>-245</posx>
+    <posy>387</posy>
+    <width>1770</width>
+    <height>350</height>
+    <onleft>509</onleft>
+    <onright>509</onright>
+    <!--<onup>SetFocus(7000)</onup>-->
+    <onup>select</onup>
+    <ondown>select</ondown>
+    <viewtype label="31275">bigwrap</viewtype>
+    <pagecontrol>60</pagecontrol>
+    <scrolltime>200</scrolltime>
+    <focusposition>3</focusposition>
+    <orientation>horizontal</orientation>
+    <preloaditems>4</preloaditems>
+    <animation effect="fade" time="10" delay="750" end="100" condition="Skin.HasSetting(noflowalbum)">Conditional</animation>
+    <animation effect="fade" start="100" end="0" time="400" condition="Control.HasFocus(110)">Conditional</animation>
+    <itemlayout height="350" width="250">
+      <control type="group">
+        <visible>Skin.HasSetting(noflowalbum)</visible>
+        <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+        <control type="image">
+          <include>MusicShowcaseThumb</include>
+          <info>ListItem.Icon</info>
+        </control>
+        <control type="image">
+          <description>Glass overlay</description>
+          <include>MusicShowcaseGlassOverlayAngled</include>
+        </control>
+        <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+        <control type="image">
+          <include>MusicShowcaseThumbReflection</include>
+          <info>ListItem.Icon</info>
+        </control>
+      </control>
+    </itemlayout>
+    <focusedlayout height="350" width="250">
+      <control type="group">
+        <visible>Skin.HasSetting(noflowalbum)</visible>
+        <animation effect="zoom" start="100" end="110" center="135,230" time="400" easing="out" reversible="false" tween="cubic">Focus</animation>
+        <animation effect="zoom" start="110" end="100" center="135,230" time="400" easing="out" reversible="false" tween="cubic" condition="!Control.HasFocus(509) + Skin.HasSetting(noflowalbum)">Unfocus</animation>
+        <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+        <control type="image">
+          <include>MusicShowcaseThumb</include>
+          <info>ListItem.Icon</info>
+        </control>
+        <control type="image">
+          <description>Glass overlay</description>
+          <include>MusicShowcaseGlassOverlay</include>
+        </control>
+        <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+        <control type="image">
+          <include>MusicShowcaseThumbReflectionMain</include>
+          <info>ListItem.Icon</info>
+        </control>
+      </control>
+    </focusedlayout>
+  </include>
+  <include name="scqfixed">
+    <control type="fixedlist" id="509">
+      <include>contents509list</include>
+    </control>
+  </include>
+  <include name="ShowcaseQuadrate">
+    <!--Labels-->
+    <control type="group">
+      <visible>Control.IsVisible(509)</visible>
+      <include>ShowcaseSquare</include>
+      <include>scqfixed</include>
+      <control type="group">
+        <visible>!Control.HasFocus(110)</visible>
+        <control type="label">
+          <posx>100</posx>
+          <posy>80</posy>
+          <width>1080</width>
+          <align>center</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_AlbumName</font>
+          <textcolor>FFe1e1e1</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <label>[UPPERCASE]$INFO[ListItem.Label2][/UPPERCASE]</label>
+          <visible>!Control.HasFocus(60)+!ControlGroup(7000).HasFocus</visible>
+        </control>
+        <control type="label">
+          <posx>100</posx>
+          <posy>85</posy>
+          <width>1080</width>
+          <align>center</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_ArtistName</font>
+          <textcolor>white</textcolor>
+          <scroll>true</scroll>
+          <shadowcolor>black</shadowcolor>
+          <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+          <visible>!Control.HasFocus(60)+!ControlGroup(7000).HasFocus</visible>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <posy>583</posy>
+          <width>500</width>
+          <align>left</align>
+          <aligny>center</aligny>
+          <include>Animation_CommonFade</include>
+          <font>Font_AlbumName</font>
+          <textcolor>white</textcolor>
+          <shadowcolor>black</shadowcolor>
+          <label>$INFO[Container.NumItems] Albuns </label>
+          <visible>Control.HasFocus(509)</visible>
+        </control>
+        <include>credits_label</include>
+        <!--<control type="scrollbar" id="60"><posx>305</posx><posy>670</posy><width>670</width><height>41</height><visible allowhiddenfocus="true">Control.HasFocus(60)</visible><texturesliderbackground border="14,0,14,0">views/scrollBarH.png</texturesliderbackground><texturesliderbar border="14,0,14,0">views/scrollBarH_bar.png</texturesliderbar><texturesliderbarfocus border="14,0,14,0">views/scrollBarH_bar_focus.png</texturesliderbarfocus><textureslidernib>views/scrollBarNib.png</textureslidernib><textureslidernibfocus>views/scrollBarNib.png</textureslidernibfocus><pulseonselect>yes</pulseonselect><onup>509</onup><ondown>110</ondown><showonepage>false</showonepage><orientation>horizontal</orientation><visible>Control.IsVisible(509)</visible><enable>Control.IsVisible(509)</enable></control>-->
+      </control>
+    </control>
+  </include>
+  <!--Covers-->
+  <include name="ShowcaseSquare">
+    <control type="group">
+      <posx>-60</posx>
+      <posy>180</posy>
+      <camera y="340" x="640"></camera>
+      <!--MOVE FOWARD-->
+      <control type="group" id="7001">
+        <visible>Control.IsVisible(509) + Container.OnNext + !Skin.HasSetting(noflowalbum)+!Control.HasFocus(110)</visible>
+        <animation effect="slide" end="-100,0" time="250" reversible="false">Hidden</animation>
+        <!--ESQUERDA-->
+        <control type="group">
+          <posx>50</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,12) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,11) + system.getbool(filelists.showparentdiritems)]</visible>
+          <visible>Container.OnNext</visible>
+          <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+          <animation effect="rotatey" center="50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-6).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-6).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>150</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-5).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-5).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>250</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="250" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-4).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-4).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>350</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="350" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-3).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-3).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>450</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="450" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-2).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-2).Icon</info>
+            </control>
+          </control>
+        </control>
+        <!--DIREITA-->
+        <control type="group">
+          <posx>1060</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
+          <visible>!Container.OnNext</visible>
+          <animation effect="fade" start="0" end="100" delay="0" time="250" reversible="false">Visible</animation>
+          <animation effect="rotatey" center="1430" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(5).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(5).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>960</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1330" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(4).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(4).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>860</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1230" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(3).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(3).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>760</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1130" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(2).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(2).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>660</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1030" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(1).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(1).Icon</info>
+            </control>
+          </control>
+        </control>
+        <!--CENTRAL-->
+        <control type="group">
+          <visible>Container.OnNext</visible>
+          <animation effect="slide" end="45" time="250" reversible="false">Hidden</animation>
+          <control type="group">
+            <posx>560</posx>
+            <visible>Container.OnNext</visible>
+            <animation effect="rotatey" center="930" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+            <animation effect="rotatey" center="930" start="65" end="65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(0).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(0).Icon</info>
+              </control>
+            </control>
+          </control>
+          <control type="group">
+            <posx>505</posx>
+            <visible>Container.OnNext</visible>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="505" start="0" end="-65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(-1).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(-1).Icon</info>
+              </control>
+            </control>
+          </control>
+        </control>
+      </control>
+      <!--MOVE BACKYARD-->
+      <control type="group" id="7002">
+        <visible>Control.IsVisible(509) + Container.OnPrevious + !Skin.HasSetting(noflowalbum)+!Control.HasFocus(110)</visible>
+        <animation effect="slide" end="100,0" time="250" reversible="false">Hidden</animation>
+        <control type="group">
+          <posx>960</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,11) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,10) + system.getbool(filelists.showparentdiritems)]</visible>
+          <visible>Container.OnPrevious</visible>
+          <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+          <animation effect="rotatey" center="1330" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(6).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(6).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>860</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1230" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(5).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(5).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>760</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1130" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(4).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(4).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>660</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="1030" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(3).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(3).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>560</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="930" start="65" end="65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(2).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(2).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>-50</posx>
+          <visible>!Container.OnPrevious</visible>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="fade" start="0" end="100" time="250" reversible="false">Visible</animation>
+          <animation effect="rotatey" center="-50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-5).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-5).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>50</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-4).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-4).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>150</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-3).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-3).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>250</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="250" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-2).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-2).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <posx>350</posx>
+          <visible>[IntegerGreaterThan(Container(509).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
+          <animation effect="rotatey" center="350" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumb</include>
+              <info>Container(509).ListItem(-1).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayAngled</include>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            <control type="image">
+              <include>MusicShowcaseThumbReflection</include>
+              <info>Container(509).ListItem(-1).Icon</info>
+            </control>
+          </control>
+        </control>
+        <control type="group">
+          <visible>Container.OnPrevious</visible>
+          <animation effect="slide" end="-45,0" time="250" reversible="false">Hidden</animation>
+          <control type="group">
+            <posx>450</posx>
+            <visible>Container.OnPrevious</visible>
+            <animation effect="rotatey" center="450" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="in">Hidden</animation>
+            <animation effect="rotatey" center="450" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(0).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(0).Icon</info>
+              </control>
+            </control>
+          </control>
+          <control type="group">
+            <posx>505</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
+            <visible>Container.OnPrevious</visible>
+            <animation effect="rotatey" center="875" start="0" end="65" time="250" reversible="false" tween="quadratic" easing="out">Hidden</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(1).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(1).Icon</info>
+              </control>
+            </control>
+          </control>
+        </control>
+      </control>
+      <!--STATIC-->
+      <control type="group" id="7000">
+        <animation effect="fade" time="500">WindowOpen</animation>
+        <animation effect="fade" time="200">WindowClose</animation>
+        <visible>Control.IsVisible(509) + !Control.IsVisible(7001) + !Control.IsVisible(7002) + !Control.HasFocus(110)</visible>
+        <!--ESQUERDA-->
+        <control type="group">
+          <control type="group">
+            <posx>50</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,10) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,9) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="50" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(-5).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(-5).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="500" start="500">WindowOpen</animation>
+            <animation effect="slide" time="500" end="500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>150</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,8) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,7) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="150" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(-4).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(-4).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="450" start="500">WindowOpen</animation>
+            <animation effect="slide" time="450" end="500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>250</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,6) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,5) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="250" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(-3).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(-3).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="400" start="500">WindowOpen</animation>
+            <animation effect="slide" time="400" end="500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>350</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,4) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,3) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="350" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(-2).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(-2).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="350" start="500">WindowOpen</animation>
+            <animation effect="slide" time="350" end="500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>450</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,2) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,1) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="450" start="-65" end="-65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(-1).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(-1).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="300" start="500">WindowOpen</animation>
+            <animation effect="slide" time="300" end="500">WindowClose</animation>
+          </control>
+        </control>
+        <!--DIREITA-->
+        <control type="group">
+          <control type="group">
+            <posx>960</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,9) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,8) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="1330" start="65" end="65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(5).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(5).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="500" start="-500">WindowOpen</animation>
+            <animation effect="slide" time="500" end="-500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>860</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,7) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,6) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="1230" start="65" end="65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(4).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(4).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="450" start="-500">WindowOpen</animation>
+            <animation effect="slide" time="450" end="-500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>760</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,5) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,4) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="1130" start="65" end="65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(3).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(3).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="400" start="-500">WindowOpen</animation>
+            <animation effect="slide" time="400" end="-500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>660</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,3) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,2) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="1030" start="65" end="65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(2).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(2).Icon</info>
+              </control>
+            </control>
+            <animation effect="slide" time="350" start="-500">WindowOpen</animation>
+            <animation effect="slide" time="350" end="-500">WindowClose</animation>
+          </control>
+          <control type="group">
+            <posx>560</posx>
+            <visible>[IntegerGreaterThan(Container(509).NumItems,1) + !system.getbool(filelists.showparentdiritems)] | [IntegerGreaterThan(Container(509).NumItems,0) + system.getbool(filelists.showparentdiritems)]</visible>
+            <animation effect="rotatey" center="930" start="65" end="65" time="0" condition="true">Conditional</animation>
+            <control type="group">
+              <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+              <control type="image">
+                <include>MusicShowcaseThumb</include>
+                <info>Container(509).ListItem(1).Icon</info>
+              </control>
+              <control type="image">
+                <description>Glass overlay</description>
+                <include>MusicShowcaseGlassOverlayAngled</include>
+              </control>
+              <control type="image">
+                <include>MusicShowcaseThumbReflection</include>
+                <info>Container(509).ListItem(1).Icon</info>
+              </control>
+              <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+            </control>
+            <animation effect="slide" time="300" start="-500">WindowOpen</animation>
+            <animation effect="slide" time="300" end="-500">WindowClose</animation>
+          </control>
+        </control>
+        <!--CENTRO-->
+        <control type="group">
+          <posx>505</posx>
+          <control type="group">
+            <include condition="Window.IsActive(2)">MusicShowcaseBlack</include>
+            <control type="image">
+              <include>MusicShowcaseThumbMain</include>
+              <info>Container(509).ListItem(0).Icon</info>
+            </control>
+            <control type="image">
+              <description>Glass overlay</description>
+              <include>MusicShowcaseGlassOverlayMain</include>
+            </control>
+            <control type="image">
+              <include>MusicShowcaseThumbReflectionMain</include>
+              <info>Container(509).ListItem(0).Icon</info>
+            </control>
+            <include condition="Window.IsActive(2)">MusicShowcaseBlackReflection</include>
+          </control>
+        </control>
+      </control>
+    </control>
+  </include>
+</includes>

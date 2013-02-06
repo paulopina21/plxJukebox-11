@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=PleXus Jukebox
+Comment=This session will start PleXus Jukebox
+Exec=plxJukebox-standalone
+TryExec=plxJukebox-standalone
+Type=Application

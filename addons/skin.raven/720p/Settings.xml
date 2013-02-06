@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window id="4">
+  <defaultcontrol always="true">9000</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control type="image">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>342</width>
+      <height>770</height>
+      <visible>true</visible>
+      <texture>special://skin/media/settings/listbg.png</texture>
+      <aspectratio>scale</aspectratio>
+    </control>
+    <control type="largeimage">
+      <posx>342</posx>
+      <posy>0</posy>
+      <width>1018</width>
+      <height>768</height>
+      <visible>true</visible>
+      <texture>special://skin/media/settings/BG_SETTINGS.png</texture>
+      <aspectratio>scale</aspectratio>
+    </control>
+    <control type="group">
+      <posx>0</posx>
+      <posy>0</posy>
+      <include>Animation_Bartowski_Context_Zoom</include>
+      <control type="group">
+        <posx>65</posx>
+        <posy>20</posy>
+        <include>PleXus</include>
+      </control>
+      <control type="list" id="9000">
+        <posx>0</posx>
+        <posy>110</posy>
+        <width>342</width>
+        <height>560</height>
+        <onleft>9000</onleft>
+        <onright>9001</onright>
+        <onup>9000</onup>
+        <ondown>9000</ondown>
+        <pagecontrol>-</pagecontrol>
+        <scrolltime>300</scrolltime>
+        <itemlayout height="60" width="260">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>342</width>
+            <height>300</height>
+            <visible>false</visible>
+            <colordiffuse>copper</colordiffuse>
+            <texture border="0">raven/square.jpg</texture>
+          </control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>290</width>
+            <height>30</height>
+            <visible>false</visible>
+		        <texture>confluence/MenuItemNF.png</texture>
+          </control>
+          <control type="label">
+            <posx>20</posx>
+            <posy>3</posy>
+            <width>380</width>
+            <height>61</height>
+            <font>Font_ArtistName</font>
+            <textcolor>black</textcolor>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>[UPPERCASE]$INFO[ListItem.Label][/UPPERCASE]</label>
+          </control>
+        </itemlayout>
+        <focusedlayout height="60" width="342">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>342</width>
+            <height>67</height>
+            <texture border="0">settings/button-focus.png</texture>
+          </control>
+          <control type="label">
+            <posx>20</posx>
+            <posy>3</posy>
+            <width>380</width>
+            <height>61</height>
+            <font>Font_ArtistName</font>
+            <textcolor>black</textcolor>
+            <textoffsetx></textoffsetx>
+            <align>left</align>
+            <aligny>center</aligny>
+            <label>$INFO[ListItem.Label]</label>
+          </control>
+        </focusedlayout>
+        <content>
+          <item id="1">
+            <label>480</label>
+            <label2>31400</label2>
+            <onclick>ActivateWindow(AppearanceSettings)</onclick>
+            <icon>special://skin/backgrounds/appearance1.jpg</icon>
+          </item>
+<!--
+          <item id="2">
+            <label>157</label>
+            <label2>31401</label2>
+            <onclick>ActivateWindow(VideosSettings)</onclick>
+            <icon>special://skin/backgrounds/videos.jpg</icon>
+          </item>
+-->
+          <item id="3">
+            <label>14086</label>
+            <label2>31402</label2>
+            <onclick>ActivateWindow(MusicSettings)</onclick>
+            <icon>special://skin/backgrounds/music.jpg</icon>
+          </item>
+<!--
+          <item id="4">
+            <label>1</label>
+            <label2>31403</label2>
+            <onclick>ActivateWindow(PicturesSettings)</onclick>
+            <icon>special://skin/backgrounds/pictures.jpg</icon>
+          </item>
+          <item id="5">
+            <label>8</label>
+            <label2>31404</label2>
+            <onclick>ActivateWindow(WeatherSettings)</onclick>
+            <icon>special://skin/backgrounds/weather.jpg</icon>
+          </item>
+          <item id="6">
+            <label>24001</label>
+            <label2>31408</label2>
+            <onclick>ActivateWindow(AddonBrowser)</onclick>
+            <icon>special://skin/backgrounds/addons.jpg</icon>
+          </item>
+          <item id="7">
+            <label>705</label>
+            <label2>31405</label2>
+            <onclick>ActivateWindow(NetworkSettings)</onclick>
+            <icon>special://skin/backgrounds/network.jpg</icon>
+          </item>
+          -->
+          <item id="8">
+            <label>13000</label>
+            <label2>31406</label2>
+            <onclick>ActivateWindow(SystemSettings)</onclick>
+            <icon>special://skin/backgrounds/system.jpg</icon>
+          </item>
+          <item id="9">
+            <label>72001</label>
+            <label2>31406</label2>
+            <onclick>ActivateWindow(JukeboxSettings)</onclick>
+            <icon>special://skin/backgrounds/system.jpg</icon>
+          </item>
+          <!--
+          <item id="9">
+            <label>166</label>
+            <label2>31407</label2>
+            <onclick>ActivateWindow(1111)</onclick>
+            <icon>special://skin/backgrounds/skinsetting.jpg</icon>
+          </item>
+          -->
+        </content>
+      </control>
+      <control type="label">
+        <description>header label</description>
+        <posx>380</posx>
+        <posy>30</posy>
+        <width>740</width>
+        <height>30</height>
+        <font>Font_ArtistName</font>
+        <label>$LOCALIZE[91000] $LOCALIZE[5]</label>
+        <align>left</align>
+        <aligny>center</aligny>
+        <textcolor>black</textcolor>
+      </control>
+      <!--control type="image">
+				<posx>272</posx>
+				<posy>62</posy>
+				<width>796</width>
+				<height>446</height>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>600</fadetime>
+				<texture background="true" diffuse="Showcase/showcase-diffuse.png">$INFO[Container(9000).ListItem.Icon]</texture>
+			</control-->
+      <control type="textbox">
+        <description>Appearance Description</description>
+        <posx>450</posx>
+        <posy>300</posy>
+        <width>740</width>
+        <height>100</height>
+        <font>font18</font>
+        <label>$INFO[Container(9000).ListItem.Label2]</label>
+        <align>center</align>
+        <textcolor>ff333333</textcolor>
+        <shadowcolor></shadowcolor>
+      </control>
+    </control>
+    <include>Global_Time_TopRight_Files</include>
+  </controls>
+</window>

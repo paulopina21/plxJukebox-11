@@ -1,0 +1,12 @@
+<settings>
+    <setting id="beat_sens" value="5" />
+    <setting id="lastlockedstatus" value="false" />
+    <setting id="lastpresetfolder" value="zip://special%3A%2F%2Froot%2Faddons%2Fvisualization%2Eprojectm%2Fresources%2Fpresets%2Ezip" />
+    <setting id="lastpresetidx" value="204" />
+    <setting id="preset pack" value="0" />
+    <setting id="preset_duration" value="2" />
+    <setting id="quality" value="0" />
+    <setting id="shuffle" value="true" />
+    <setting id="smooth_duration" value="0" />
+    <setting id="user preset folder" value="" />
+</settings>

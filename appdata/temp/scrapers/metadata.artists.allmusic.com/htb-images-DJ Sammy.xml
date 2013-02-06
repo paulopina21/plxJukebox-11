@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335022209</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[DJ Sammy]]></original_keywords>
+	<keywords><![CDATA[+dj +sammy]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>11927</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[DJ Sammy]]></title>
+			<filename><![CDATA[djssam.jpg]]></filename>
+			<mbid>c43e35b8-8234-408b-9a25-07f2fcbeb317</mbid>
+			<filesize>150084</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>2</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>11928</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[DJ Sammy]]></title>
+			<filename><![CDATA[Music_Dj_Sammy_004726_.jpg]]></filename>
+			<mbid>c43e35b8-8234-408b-9a25-07f2fcbeb317</mbid>
+			<filesize>205114</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

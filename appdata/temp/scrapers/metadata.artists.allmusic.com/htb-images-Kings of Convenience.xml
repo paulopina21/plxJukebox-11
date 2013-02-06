@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335024252</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Kings of Convenience]]></original_keywords>
+	<keywords><![CDATA[+kings +convenience]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>1</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>1561</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Kings of Convenience]]></title>
+			<filename><![CDATA[Kings_of_Convenience.jpg]]></filename>
+			<mbid>cf0f4547-ffbd-4011-98ad-0bec9ba022db</mbid>
+			<filesize>1585776</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

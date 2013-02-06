@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335029740</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[The Cardigans]]></original_keywords>
+	<keywords><![CDATA[+cardigans]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>6</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>205</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The Cardigans]]></title>
+			<filename><![CDATA[Cardigans,_The.jpg]]></filename>
+			<mbid>3e55d51d-687f-4a9d-af96-2fabccf802e5</mbid>
+			<filesize>74391</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>10000</rating>
+			<votes>1</votes>
+		</image>
+		<image>
+			<id>1664</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The Cardigans]]></title>
+			<filename><![CDATA[The_Cardigans.jpg]]></filename>
+			<mbid>3e55d51d-687f-4a9d-af96-2fabccf802e5</mbid>
+			<filesize>885229</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>1665</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The Cardigans]]></title>
+			<filename><![CDATA[The_Cardigans1.jpg]]></filename>
+			<mbid>3e55d51d-687f-4a9d-af96-2fabccf802e5</mbid>
+			<filesize>1468337</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>5432</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[The Cardigans]]></title>
+			<filename><![CDATA[The_Cardigans.jpg]]></filename>
+			<mbid>3e55d51d-687f-4a9d-af96-2fabccf802e5</mbid>
+			<filesize>170247</filesize>
+			<dimensions>600x600</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>6782</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The Cardigans]]></title>
+			<filename><![CDATA[The_Cardigans_2.jpg]]></filename>
+			<mbid>3e55d51d-687f-4a9d-af96-2fabccf802e5</mbid>
+			<filesize>748777</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>11135</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The Cardigans]]></title>
+			<filename><![CDATA[fanart_143.jpg]]></filename>
+			<mbid>3e55d51d-687f-4a9d-af96-2fabccf802e5</mbid>
+			<filesize>986557</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

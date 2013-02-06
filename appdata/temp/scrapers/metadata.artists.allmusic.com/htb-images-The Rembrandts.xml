@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335030136</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[The Rembrandts]]></original_keywords>
+	<keywords><![CDATA[+rembrandts]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>1</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>6082</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[The Rembrandts]]></title>
+			<filename><![CDATA[TheRembrandts.jpg]]></filename>
+			<mbid>9363f65f-64c6-4711-a86c-7cba56d9a456</mbid>
+			<filesize>515420</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

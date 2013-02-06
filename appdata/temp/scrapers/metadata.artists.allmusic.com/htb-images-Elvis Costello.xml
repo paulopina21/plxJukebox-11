@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335022529</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Elvis Costello]]></original_keywords>
+	<keywords><![CDATA[+elvis +costello]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>623</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Elvis Costello]]></title>
+			<filename><![CDATA[elvis_costello.jpg]]></filename>
+			<mbid>8a338e06-d182-46f2-bd16-30a09bc840ba</mbid>
+			<filesize>516222</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>2538</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Elvis Costello]]></title>
+			<filename><![CDATA[Elvis_Costello.jpg]]></filename>
+			<mbid>8a338e06-d182-46f2-bd16-30a09bc840ba</mbid>
+			<filesize>1310233</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>8783</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Elvis Costello]]></title>
+			<filename><![CDATA[Elvis_Costello_500x500.jpg]]></filename>
+			<mbid>8a338e06-d182-46f2-bd16-30a09bc840ba</mbid>
+			<filesize>38067</filesize>
+			<dimensions>500x500</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

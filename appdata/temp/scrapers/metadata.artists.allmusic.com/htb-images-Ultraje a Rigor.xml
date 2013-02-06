@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335030772</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Ultraje a Rigor]]></original_keywords>
+	<keywords><![CDATA[+ultraje +a +rigor]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>14700</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Ultraje a Rigor]]></title>
+			<filename><![CDATA[Ultraje_a_Rigor_1.jpg]]></filename>
+			<keywords><![CDATA[Ultraje A Rigor]]></keywords>
+			<mbid>05528c1e-668e-497c-b7e3-b47961b37d8e</mbid>
+			<filesize>295462</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14701</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Ultraje a Rigor]]></title>
+			<filename><![CDATA[Ultraje_a_Rigor_2.jpg]]></filename>
+			<keywords><![CDATA[Ultraje A Rigor]]></keywords>
+			<mbid>05528c1e-668e-497c-b7e3-b47961b37d8e</mbid>
+			<filesize>429864</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14702</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Ultraje a Rigor]]></title>
+			<filename><![CDATA[Ultraje_a_Rigor_3.jpg]]></filename>
+			<keywords><![CDATA[Ultraje A Rigor]]></keywords>
+			<mbid>05528c1e-668e-497c-b7e3-b47961b37d8e</mbid>
+			<filesize>580652</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

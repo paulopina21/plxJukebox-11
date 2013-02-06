@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335023461</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Groove Armada]]></original_keywords>
+	<keywords><![CDATA[+groove +armada]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>2988</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Groove Armada]]></title>
+			<filename><![CDATA[Groove_Armada.jpg]]></filename>
+			<mbid>35723b60-732e-4bd8-957f-320b416e7b7f</mbid>
+			<filesize>450915</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>6221</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Groove Armada]]></title>
+			<filename><![CDATA[Groove_Armada_500x500_Logo.jpg]]></filename>
+			<mbid>35723b60-732e-4bd8-957f-320b416e7b7f</mbid>
+			<filesize>13479</filesize>
+			<dimensions>500x500</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>10970</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Groove Armada]]></title>
+			<filename><![CDATA[folder_2_21.jpg]]></filename>
+			<caption><![CDATA[Groove Armada]]></caption>
+			<mbid>35723b60-732e-4bd8-957f-320b416e7b7f</mbid>
+			<filesize>224031</filesize>
+			<dimensions>1080x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

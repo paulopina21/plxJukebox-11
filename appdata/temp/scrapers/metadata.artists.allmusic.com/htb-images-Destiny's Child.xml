@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335022045</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Destiny's Child]]></original_keywords>
+	<keywords><![CDATA[+destiny's +child]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>1496</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Destiny's Child]]></title>
+			<filename><![CDATA[destinys_child.jpg]]></filename>
+			<mbid>a796b92e-c137-4895-9c89-10f900617a4f</mbid>
+			<filesize>918493</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>2536</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Destiny's Child]]></title>
+			<filename><![CDATA[Destinys_Child.jpg]]></filename>
+			<mbid>a796b92e-c137-4895-9c89-10f900617a4f</mbid>
+			<filesize>1642501</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>12622</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Destiny's Child]]></title>
+			<filename><![CDATA[Destiny_s_Child.jpg]]></filename>
+			<mbid>a796b92e-c137-4895-9c89-10f900617a4f</mbid>
+			<filesize>88283</filesize>
+			<dimensions>400x400</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

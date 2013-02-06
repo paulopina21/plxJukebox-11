@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<includes>
+  <include name="Viewtype_Episode">
+    <include>Animation_OpenCloseZoom</include>
+    <control type="image">
+      <include>Dimensions_Fullscreen</include>
+      <texture>list/file-black-background1.png</texture>
+      <visible>Control.IsVisible(51)</visible>
+    </control>
+    <!--###CAPAS 3D###-->
+    <control type="group">
+      <posx>780</posx>
+      <posy>120</posy>
+      <visible>Control.IsVisible(51)</visible>
+      <visible>Window.IsActive(videolibrary) + Container.Content(episodes)</visible>
+      <!-- Show Case Hybrid View Icons - Counter Clockwise Mothion -->
+      <!--<control type="group" id="15101"><visible>Container(51).OnPrevious</visible><animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>/* Hide Far Right Icon On Move Previous */<control type="group"><visible>Container(51).OnPrevious</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(4).Label)</visible><animation type="Hidden" reversible="false"><effect type="fade" start="100" end="0" time="250" /><effect type="slide" start="0" end="128" time="250" /></animation><posx>320</posx><posy>50</posy><width>212</width><height>413</height><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(4).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(4).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(4).Thumb</info><visible>!IsEmpty(Container(51).ListItem(4).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>overlays\wide\$INFO[Container(51).ListItem(4).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(4).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(4).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(4).Thumb</info><visible>!IsEmpty(Container(51).ListItem(4).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Move Icon 3 To Icon 4 Position On Move Previous */<control type="group"><visible>Container(51).OnPrevious</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible><animation effect="zoom" start="240,30,262,510" end="320,50,212,413" time="250" reversible="false">Hidden</animation><posx>240</posx><posy>30</posy><width>262</width><height>510</height><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(3).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(3).Thumb</info><visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><texture>overlays\wide\$INFO[Container(51).ListItem(3).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(3).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(3).Thumb</info><visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Move Icon 2 To Icon 3 Position On Move Previous */<control type="group"><visible>Container(51).OnPrevious</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible><animation effect="zoom" start="130,10,324,632" end="240,30,262,510" time="250" reversible="false">Hidden</animation><posx>130</posx><posy>10</posy><width>324</width><height>632</height><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(2).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(2).Thumb</info><visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><texture>overlays\wide\$INFO[Container(51).ListItem(2).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(2).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(2).Thumb</info><visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Move Icon 1 To Icon 2 Position On Move Previous */<control type="group"><visible>Container(51).OnPrevious</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible><animation effect="zoom" start="0,0,400,780" end="130,10,324,632" time="250" reversible="false">Hidden</animation><posx>0</posx><posy>0</posy><width>400</width><height>780</height><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>overlays\wide\$INFO[Container(51).ListItem(1).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Show Far Left Icon On Move Previous */<control type="group"><visible>Container(51).OnPrevious</visible><animation type="Hidden" reversible="false"><effect type="fade" start="0" end="100" time="250" /><effect type="slide" start="-128" end="0" time="250" /></animation><animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation><posx>0</posx><posy>0</posy><width>400</width><height>780</height><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(0).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(0).Thumb</info><visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>overlays\wide\$INFO[Container(51).ListItem(0).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(0).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(0).Thumb</info><visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control></control>-->
+      <!-- Show Case Hybrid View Icons - Clockwise Mothion -->
+      <!--<control type="group" id="15102"><visible>Container(51).OnNext</visible><animation effect="slide" end="0,0" time="250" reversible="false">Hidden</animation>/* Show Far Right Icon On Move Next */<control type="group"><visible>Container(51).OnNext</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible><animation type="Hidden" reversible="false"><effect type="fade" start="0" end="100" time="250" /><effect type="slide" start="128" end="0" time="250" /></animation><animation effect="fade" start="0" end="0" time="0" reversible="false">Visible</animation><posx>320</posx><posy>50</posy><width>212</width><height>413</height><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(3).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(3).Thumb</info><visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>overlays\wide\$INFO[Container(51).ListItem(3).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(3).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(3).Thumb</info><visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Move Icon 4 To Icon 3 Position On Move Next */<control type="group"><visible>Container(51).OnNext</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible><animation effect="zoom" start="320,50,212,413" end="240,30,262,510" time="250" reversible="false">Hidden</animation><posx>320</posx><posy>50</posy><width>212</width><height>413</height><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(2).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(2).Thumb</info><visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>overlays\wide\$INFO[Container(51).ListItem(2).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(2).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(2).Thumb</info><visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Move Icon 3 To Icon 2 Position On Move Next */<control type="group"><visible>Container(51).OnNext</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible><animation effect="zoom" start="240,30,262,510" end="130,10,324,632" time="250" reversible="false">Hidden</animation><posx>240</posx><posy>30</posy><width>262</width><height>510</height><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><texture>overlays\wide\$INFO[Container(51).ListItem(1).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Move Icon 2 To Icon 1 Position On Move Next */<control type="group"><visible>Container(51).OnNext</visible><visible>!IsEmpty(Container(51).ListItemNoWrap(0).Label)</visible><animation effect="zoom" start="130,10,324,632" end="0,0,400,780" time="250" reversible="false">Hidden</animation><posx>130</posx><posy>10</posy><width>324</width><height>632</height><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(0).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(0).Thumb</info><visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><texture>overlays\wide\$INFO[Container(51).ListItem(0).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(0).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(0).Thumb</info><visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>/* Hide Far Left Icon On Move Next */<control type="group"><visible>Container(51).OnNext</visible><animation type="Hidden" reversible="false"><effect type="fade" start="100" end="0" time="250" /><effect type="slide" start="0" end="-128" time="250" /></animation><posx>0</posx><posy>0</posy><width>400</width><height>780</height><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(-1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(-1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(-1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(-1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>overlays\wide\$INFO[Container(51).ListItem(-1).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(-1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(-1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(-1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(-1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control></control>-->
+      <!-- Show Case Hybrid View Static Icons -->
+      <control type="group" id="15100">
+        <visible>!Control.IsVisible(15101)  + !Control.IsVisible(15102)</visible>
+        <!-- Icon 4 -->
+        <!--<control type="group"><posx>320</posx><posy>50</posy><width>212</width><height>413</height><animation type="WindowOpen"><effect type="slide" start="-494" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" /><effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" /></animation><animation type="WindowClose"><effect type="slide" start="0" end="-494" center="auto" time="150" tween="back" easing="in" reversible="false" /><effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" /></animation><visible>!IsEmpty(Container(51).ListItemNoWrap(3).Label)</visible><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(3).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(3).Thumb</info><visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>overlays\wide\$INFO[Container(51).ListItem(3).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>212</width><height>134</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(3).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(3).Thumb</info><visible>!IsEmpty(Container(51).ListItem(3).Thumb)</visible></control><control type="image"><posx>0</posx><posy>134</posy><width>212</width><height>134</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>-->
+        <!-- Icon 3 -->
+        <!--<control type="group"><posx>240</posx><posy>30</posy><width>262</width><height>510</height><animation type="WindowOpen"><effect type="slide" start="-357" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" /><effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" /></animation><animation type="WindowClose"><effect type="slide" start="0" end="-357" center="auto" time="150" tween="back" easing="in" reversible="false" /><effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" /></animation><visible>!IsEmpty(Container(51).ListItemNoWrap(2).Label)</visible><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(2).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(2).Thumb</info><visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><texture>overlays\wide\$INFO[Container(51).ListItem(2).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>262</width><height>166</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(2).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(2).Thumb</info><visible>!IsEmpty(Container(51).ListItem(2).Thumb)</visible></control><control type="image"><posx>0</posx><posy>166</posy><width>262</width><height>166</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>-->
+        <!-- Icon 2 -->
+        <!--<control type="group"><posx>130</posx><posy>10</posy><width>324</width><height>632</height><animation type="WindowOpen"><effect type="slide" start="-192" end="0" center="auto" time="150" delay="150" tween="elastic" easing="out" reversible="false" /><effect type="fade" start="0" end="100" time="150" delay="150" tween="sine" easing="out" reversible="false" /></animation><animation type="WindowClose"><effect type="slide" start="0" end="-192" center="auto" time="150" tween="back" easing="in" reversible="false" /><effect type="fade" start="100" end="0" time="150" tween="sine" easing="in" reversible="false" /></animation><visible>!IsEmpty(Container(51).ListItemNoWrap(1).Label)</visible><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><texture>overlays\wide\$INFO[Container(51).ListItem(1).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control><control type="image"><posx>0</posx><posy>0</posy><width>324</width><height>206</height><texture>episode-overlay.png</texture></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(1).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><aspectratio align="center" scalediffuse="false">scale</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(1).Thumb</info><visible>!IsEmpty(Container(51).ListItem(1).Thumb)</visible></control><control type="image"><posx>0</posx><posy>206</posy><width>324</width><height>206</height><texture flipy="true" diffuse="episode-reflect-diffuse.png">episode-overlay.png</texture></control></control>-->
+        <!-- Icon 1 -->
+        <control type="group">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>400</width>
+          <height>780</height>
+          <animation type="WindowOpen">
+            <effect type="fade" start="0" end="100" time="150" tween="sine" easing="out" reversible="false" />
+            <effect type="rotatey" start="90" end="0" center="0,0" time="150" tween="sine" easing="out" reversible="false" />
+          </animation>
+          <animation type="WindowClose">
+            <effect type="fade" start="100" end="0" time="150" delay="150" tween="sine" easing="in" reversible="false" />
+            <effect type="rotatey" start="0" end="-90" center="0,0" time="150" delay="150" tween="sine" easing="out" reversible="false" />
+          </animation>
+          <!--<control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture diffuse="episode-diffuse.png" /><info>Container(51).ListItem(0).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible></control>-->
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>400</width>
+            <height>255</height>
+            <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+            <texture diffuse="raven/diffuse-tvshow.png">$INFO[Container(51).ListItem().Thumb]</texture>
+            <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
+          </control>
+          <!--<control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>255</height><texture>overlays\wide\$INFO[Container(51).ListItem(0).Overlay]</texture><visible>!Skin.HasSetting(Disable_Unwatched_Overlay)</visible></control>-->
+          <control type="image">
+            <visible>!IsEmpty(ListItem.Title)</visible>
+            <description>EMBOSS EFFECT</description>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>400</width>
+            <height>255</height>
+            <fadetime>100</fadetime>
+            <colordiffuse>Emboss</colordiffuse>
+            <texture background="false" diffuse="raven/diffuse-tvshow.png">raven/common/effect-rounded-emboss.png</texture>
+            <aspectratio scalediffuse="false" align="center">scale</aspectratio>
+          </control>
+          <!--<control type="image"><posx>0</posx><posy>255</posy><width>400</width><height>255</height><aspectratio align="center" scalediffuse="false">keep</aspectratio><texture flipy="true" diffuse="episode-reflect-diffuse.png" /><info>Container(51).ListItem(0).ActualIcon</info><visible>IsEmpty(Container(51).ListItem(0).Thumb)</visible></control>-->
+          <control type="image">
+            <posx>0</posx>
+            <posy>255</posy>
+            <width>400</width>
+            <height>255</height>
+            <aspectratio align="center" scalediffuse="false">scale</aspectratio>
+            <texture flipy="true" diffuse="episode-reflect-diffuse.png" />
+            <info>Container(51).ListItem().Thumb</info>
+            <visible>!IsEmpty(Container(51).ListItem(0).Thumb)</visible>
+          </control>
+        </control>
+      </control>
+    </control>
+    <!-- Browser -->
+    <control type="fixedlist" id="51">
+      <viewtype label="31290">list</viewtype>
+      <posx>50</posx>
+      <posy>120</posy>
+      <width>933</width>
+      <height>567</height>
+      <scrolltime>200</scrolltime>
+      <orientation>vertical</orientation>
+      <movement>3</movement>
+      <focusposition>3</focusposition>
+      <onup>51</onup>
+      <ondown>51</ondown>
+      <onleft>7000</onleft>
+      <onright>64</onright>
+      <pagecontrol>64</pagecontrol>
+      <visible>Window.IsActive(videolibrary) + Container.Content(episodes)</visible>
+      <include>Animation_ZoomedByMenu</include>
+      <include>Animation_ZoomInZoomOut</include>
+      <include>Animation_HiddenByInfo</include>
+      <include>Animation_EpisodeFloat</include>
+      <itemlayout width="633" height="60">
+        <control type="label">
+          <posx>50</posx>
+          <posy>0</posy>
+          <width>100</width>
+          <height>60</height>
+          <align>right</align>
+          <aligny>top</aligny>
+          <label>[B]$INFO[ListItem.Episode][/B]</label>
+          <font>Font_EpisodeNumber</font>
+          <textcolor>copper</textcolor>
+          <selectedcolor>copper</selectedcolor>
+        </control>
+        <control type="image">
+          <posx>54</posx>
+          <posy>5</posy>
+          <width>20</width>
+          <height>20</height>
+          <texture>overlays\videos\$INFO[ListItem.Overlay]</texture>
+        </control>
+        <control type="label">
+          <posx>80</posx>
+          <posy>0</posy>
+          <width>550</width>
+          <height>29</height>
+          <align>left</align>
+          <aligny>center</aligny>
+          <label>$INFO[ListItem.Title]</label>
+          <font>Font_EpisodeTitle</font>
+          <textcolor>white</textcolor>
+          <selectedcolor>copper</selectedcolor>
+        </control>
+        <!--<control type="label"><posx>80</posx><posy>14</posy><width>633</width><height>60</height><align>left</align><label>[COLOR TimeAMPM]$INFO[ListItem.TVShowTitle,, - ][/COLOR]$INFO[ListItem.Title]</label><font>Font_EpisodeTitleNF</font><textcolor>white</textcolor><selectedcolor>TextSelected</selectedcolor><visible>!IsEmpty(ListItem.Title) + SubString(Container.FolderPath,videodb://5/) + [Skin.HasSetting(HideTVWatchedOverlays) | !stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+        <!--<control type="label"><posx>80</posx><posy>14</posy><width>633</width><height>60</height><align>left</align><label>[COLOR TimeAMPM]$INFO[ListItem.TVShowTitle,, - ][/COLOR]$INFO[ListItem.Title]  ✔</label><font>Font_EpisodeTitleNF</font><textcolor>white</textcolor><selectedcolor>TextSelected</selectedcolor><visible>!IsEmpty(ListItem.Title) + SubString(Container.FolderPath,videodb://5/) + [!Skin.HasSetting(HideTVWatchedOverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+        <!--<control type="label"><posx>60</posx><posy>3</posy><width>633</width><height>60</height><align>left</align><label>$INFO[ListItem.Title]  ✔</label><font>Font_EpisodeTitleNF</font><textcolor>EpisodeTitle</textcolor><selectedcolor>TextSelected</selectedcolor><visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,videodb://5/) + [!Skin.HasSetting(HideTVWatchedOverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+        <control type="label">
+          <posx>60</posx>
+          <posy>25</posy>
+          <width>633</width>
+          <height>60</height>
+          <align>left</align>
+          <label>• $INFO[ListItem.Date,$LOCALIZE[20416]: ]</label>
+          <font>Font_EpisodeDetailNF</font>
+          <textcolor>EpisodeTitle</textcolor>
+          <selectedcolor>EpisodeTitle</selectedcolor>
+        </control>
+      </itemlayout>
+      <focusedlayout width="633" height="60">
+        <!--<control type="image"><posx>83</posx><posy>50</posy><width>253</width><height>139</height><texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture><aspectratio scalediffuse="false">keep</aspectratio><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /></animation><visible>IsEmpty(ListItem.Title)</visible></control>-->
+        <!--<control type="image"><posx>83</posx><posy>50</posy><width>253</width><height>139</height><texture background="true" diffuse="episodematte.png">$INFO[ListItem.Icon]</texture><aspectratio scalediffuse="false">scale</aspectratio><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /></animation><visible>!IsEmpty(ListItem.Title)</visible></control>-->
+        <!--<control type="image"><posx>70</posx><posy>37</posy><width>278</width><height>164</height><texture>episodeframe.png</texture><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /><effect type="fade" start="0" end="100" time="200" /></animation><visible>!IsEmpty(ListItem.Title) + [Skin.HasSetting(HideTVWatchedOverlays) | !stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+        <!--<control type="image"><posx>70</posx><posy>37</posy><width>278</width><height>164</height><texture>episodeframewatched.png</texture><animation type="Focus" reversible="false"><effect type="zoom" center="127,70" start="50" end="100" time="200" tween="cubic" easing="out" /><effect type="fade" start="0" end="100" time="200" /></animation><visible>!IsEmpty(ListItem.Title) + [!Skin.HasSetting(HideTVWatchedOverlays) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible></control>-->
+        <!--<control type="label"><posx>78</posx><posy>0</posy><width>600</width><label>$INFO[ListItem.Episode,,.] $INFO[ListItem.Title]</label><font>Font_EpisodeNumber</font>/*<font>Font_EpisodeTitleNF</font>*/<textcolor>EpisodeLabelF</textcolor><selectedcolor>TextSelected</selectedcolor><animation type="Focus" reversible="false" acceleration="40" tween="back" easing="InOut"><effect type="fade" start="50" end="100" time="250" acceleration="1" /><effect type="slide" start="+35,-60" end="0,0" time="200" acceleration="1" tween="easing" easing="InOut"></effect></animation><visible>!IsEmpty(ListItem.Title)</visible></control>-->
+        <control type="label">
+          <posx>50</posx>
+          <posy>0</posy>
+          <width>100</width>
+          <height>60</height>
+          <align>right</align>
+          <aligny>top</aligny>
+          <label>[B]$INFO[ListItem.Episode][/B]</label>
+          <font>Font_EpisodeNumber</font>
+          <textcolor>copper</textcolor>
+        </control>
+        <control type="image">
+          <posx>54</posx>
+          <posy>5</posy>
+          <width>20</width>
+          <height>20</height>
+          <texture>overlays\videos\$INFO[ListItem.Overlay]</texture>
+          <animation type="Focus" reversible="false">
+            <effect type="zoom" start="81" end="100" time="300" tween="back" easing="out" />
+            <effect type="fade" start="0" end="100" time="600" />
+          </animation>
+        </control>
+        <control type="label">
+          <posx>80</posx>
+          <posy>0</posy>
+          <width>550</width>
+          <height>29</height>
+          <align>left</align>
+          <aligny>center</aligny>
+          <label>$INFO[ListItem.Title]</label>
+          <font>Font_EpisodeTitle</font>
+          <textcolor>white</textcolor>
+          <selectedcolor>copper</selectedcolor>
+          <animation type="Focus" reversible="false">
+            <effect type="zoom" start="81" end="100" time="300" tween="back" easing="out" />
+            <effect type="fade" start="30" end="100" time="600" />
+          </animation>
+        </control>
+        <control type="label">
+          <posx>60</posx>
+          <posy>25</posy>
+          <width>633</width>
+          <height>60</height>
+          <align>left</align>
+          <label>• $INFO[ListItem.Date,$LOCALIZE[20416]: ]</label>
+          <font>Font_EpisodeDetailNF</font>
+          <textcolor>EpisodeTitle</textcolor>
+        </control>
+      </focusedlayout>
+    </control>
+    <control type="textbox">
+      <posx>785</posx>
+      <posy>380</posy>
+      <width>400</width>
+      <height>260</height>
+      <label>$INFO[Container(51).ListItem.Plot]</label>
+      <align>left</align>
+      <font>Font_EpisodePlot</font>
+      <textcolor>white</textcolor>
+      <shadowcolor>shadow</shadowcolor>
+      <include>Animation_ZoomInZoomOut</include>
+      <include>Animation_ZoomedByMenu</include>
+      <include>Animation_HiddenByInfo</include>
+      <animation type="Conditional" reversible="false" condition="Control.HasFocus(51) + [!Container(51).OnNext + !Container(51).OnPrevious]">
+        <effect type="fade" start="0" end="100" time="400" />
+      </animation>
+      <autoscroll time="3600" delay="6000" repeat="6000"></autoscroll>
+    </control>
+    <!-- Scroll Bar -->
+    <control type="scrollbar" id="64">
+      <include>Animation_ZoomInZoomOut</include>
+      <include>Animation_ZoomedByMenu</include>
+      <posx>1270</posx>
+      <posy>110</posy>
+      <width>18</width>
+      <height>468</height>
+      <visible allowhiddenfocus="true">Control.IsVisible(51) + Control.HasFocus(64)</visible>
+      <texturesliderbackground>-</texturesliderbackground>
+      <textureslidernibfocus>ScrollBarV_Nib_Focus.png</textureslidernibfocus>
+      <onleft>51</onleft>
+      <onright>-</onright>
+      <showonepage>true</showonepage>
+      <orientation>vertical</orientation>
+      <animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(64)">Conditional</animation>
+    </control>
+    <control type="group">
+      <include>Animation_SlideUpFadeOut</include>
+      <include>Animation_ZoomedByMenu</include>
+      <include>MediaInfo</include>
+    </control>
+    <include>Global_Heading</include>
+  </include>
+</includes>

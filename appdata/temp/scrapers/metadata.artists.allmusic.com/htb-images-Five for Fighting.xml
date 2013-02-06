@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335022977</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Five for Fighting]]></original_keywords>
+	<keywords><![CDATA[+five +for +fighting]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>5567</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Five For Fighting]]></title>
+			<filename><![CDATA[five-for-fighting.jpg]]></filename>
+			<mbid>23eeaeaf-423d-4859-8c91-2175ece74287</mbid>
+			<filesize>1116587</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>6872</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Five for Fighting]]></title>
+			<filename><![CDATA[Five_for_Fighting.jpg]]></filename>
+			<mbid>23eeaeaf-423d-4859-8c91-2175ece74287</mbid>
+			<filesize>354862</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

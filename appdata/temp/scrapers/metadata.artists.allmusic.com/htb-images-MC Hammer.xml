@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335024923</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[MC Hammer]]></original_keywords>
+	<keywords><![CDATA[+mc +hammer]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>12682</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Mc Hammer]]></title>
+			<filename><![CDATA[MC-Hammer.jpg]]></filename>
+			<mbid>cba94150-9113-4017-acc2-a8cc0313a084</mbid>
+			<filesize>309968</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>21546</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[MC Hammer]]></title>
+			<filename><![CDATA[MC_Hammer-Thumb.jpg]]></filename>
+			<mbid>cba94150-9113-4017-acc2-a8cc0313a084</mbid>
+			<filesize>74300</filesize>
+			<dimensions>494x494</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

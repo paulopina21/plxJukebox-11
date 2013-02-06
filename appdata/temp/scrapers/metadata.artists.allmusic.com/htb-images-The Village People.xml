@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335030930</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[The Village People]]></original_keywords>
+	<keywords><![CDATA[+village +people]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>6154</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Village People]]></title>
+			<filename><![CDATA[fanart_4_27.jpg]]></filename>
+			<mbid>f19d3d49-be22-4ca6-9903-64d86984fbf2</mbid>
+			<filesize>229902</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14283</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Village People]]></title>
+			<filename><![CDATA[Village_People.jpg]]></filename>
+			<mbid>f19d3d49-be22-4ca6-9903-64d86984fbf2</mbid>
+			<filesize>130171</filesize>
+			<dimensions>385x385</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>30176</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Village People]]></title>
+			<filename><![CDATA[The_Village_People_28129.jpg]]></filename>
+			<mbid>f19d3d49-be22-4ca6-9903-64d86984fbf2</mbid>
+			<filesize>556238</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

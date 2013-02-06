@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335021873</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Damien Rice]]></original_keywords>
+	<keywords><![CDATA[+damien +rice]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>269</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Damien Rice]]></title>
+			<filename><![CDATA[Damien_Rice.jpg]]></filename>
+			<mbid>2119beb8-6ac5-4f21-82a4-b831c90c0024</mbid>
+			<filesize>268931</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>1490</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[damien rice]]></title>
+			<filename><![CDATA[damien_rice.jpg]]></filename>
+			<mbid>2119beb8-6ac5-4f21-82a4-b831c90c0024</mbid>
+			<filesize>670996</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>6306</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Damien Rice]]></title>
+			<filename><![CDATA[damien-rice-01-tmb-800x800.jpg]]></filename>
+			<mbid>2119beb8-6ac5-4f21-82a4-b831c90c0024</mbid>
+			<filesize>334213</filesize>
+			<dimensions>800x800</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

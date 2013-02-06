@@ -1,0 +1,29 @@
+<sources>
+    <programs>
+        <default pathversion="1"></default>
+    </programs>
+    <video>
+        <default pathversion="1"></default>
+    </video>
+    <music>
+        <default pathversion="1"></default>
+        <source>
+            <name>musictest</name>
+            <path pathversion="1">/media/develop/musictest/</path>
+        </source>
+    </music>
+    <pictures>
+        <default pathversion="1"></default>
+        <source>
+            <name>1080p</name>
+            <path pathversion="1">D:\Images\Wallpapers\1080p\</path>
+        </source>
+    </pictures>
+    <files>
+        <default pathversion="1"></default>
+        <source>
+            <name>movies</name>
+            <path pathversion="1">/media/laureon/Media/movies/</path>
+        </source>
+    </files>
+</sources>

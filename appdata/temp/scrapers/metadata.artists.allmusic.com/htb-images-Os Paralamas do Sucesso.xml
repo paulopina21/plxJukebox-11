@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335025720</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Os Paralamas do Sucesso]]></original_keywords>
+	<keywords><![CDATA[+os +paralamas +do +sucesso]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>4</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>14669</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Os Paralamas do Sucesso]]></title>
+			<filename><![CDATA[Paralamas_do_Sucesso_1.jpg]]></filename>
+			<keywords><![CDATA[Paralamas Do Sucesso]]></keywords>
+			<mbid>f197a8df-ac2b-4e78-9913-4abf13741f12</mbid>
+			<filesize>618445</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14670</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Os Paralamas do Sucesso]]></title>
+			<filename><![CDATA[Paralamas_do_Sucesso_2.jpg]]></filename>
+			<keywords><![CDATA[Paralamas Do Sucesso]]></keywords>
+			<mbid>f197a8df-ac2b-4e78-9913-4abf13741f12</mbid>
+			<filesize>160124</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14671</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Os Paralamas do Sucesso]]></title>
+			<filename><![CDATA[Paralamas_do_Sucesso_3.jpg]]></filename>
+			<keywords><![CDATA[Paralamas Do Sucesso]]></keywords>
+			<mbid>f197a8df-ac2b-4e78-9913-4abf13741f12</mbid>
+			<filesize>142223</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14672</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Os Paralamas do Sucesso]]></title>
+			<filename><![CDATA[Paralamas_do_Sucesso_4.jpg]]></filename>
+			<keywords><![CDATA[Paralamas Do Sucesso]]></keywords>
+			<mbid>f197a8df-ac2b-4e78-9913-4abf13741f12</mbid>
+			<filesize>427506</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

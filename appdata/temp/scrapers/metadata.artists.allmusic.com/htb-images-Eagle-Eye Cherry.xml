@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335022372</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Eagle-Eye Cherry]]></original_keywords>
+	<keywords><![CDATA[+eagle-eye +cherry]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>4220</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Eagle-Eye Cherry]]></title>
+			<filename><![CDATA[fanart_4_18.jpg]]></filename>
+			<mbid>4a5777b3-f55b-437c-8b23-d9ee7791c7fc</mbid>
+			<filesize>554453</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>21494</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Eagle-Eye Cherry]]></title>
+			<filename><![CDATA[Eagle-Eye_Cherry-Thumb.jpg]]></filename>
+			<mbid>4a5777b3-f55b-437c-8b23-d9ee7791c7fc</mbid>
+			<filesize>50360</filesize>
+			<dimensions>437x437</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

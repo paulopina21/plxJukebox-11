@@ -1,0 +1,528 @@
+<settings>
+    <music>
+        <isscanning>false</isscanning>
+    </music>
+    <audio>
+        <mute>false</mute>
+        <volumelevel>0</volumelevel>
+        <premutevolumelevel>0</premutevolumelevel>
+        <dynamicrangecompression>0</dynamicrangecompression>
+    </audio>
+    <resolutions>
+        <resolution>
+            <description>Windowed</description>
+            <subtitles>620</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>0.000000</refreshrate>
+            <output></output>
+            <xrandrid></xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1144</right>
+                <bottom>643</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>1280x800 @ 60.22 - Full Screen</description>
+            <subtitles>772</subtitles>
+            <pixelratio>1.000000</pixelratio>
+            <refreshrate>60.223049</refreshrate>
+            <output>LVDS1</output>
+            <xrandrid>0x4b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>LVDS1: 1280x800 @ 60.22Hz</description>
+            <subtitles>760</subtitles>
+            <pixelratio>0.998603</pixelratio>
+            <refreshrate>60.223049</refreshrate>
+            <output>LVDS1</output>
+            <xrandrid>0x4b</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1280</right>
+                <bottom>800</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>LVDS1: 1024x768 @ 60.00Hz</description>
+            <subtitles>729</subtitles>
+            <pixelratio>1.198324</pixelratio>
+            <refreshrate>60.003841</refreshrate>
+            <output>LVDS1</output>
+            <xrandrid>0x4c</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>1024</right>
+                <bottom>768</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>LVDS1: 800x600 @ 60.32Hz</description>
+            <subtitles>570</subtitles>
+            <pixelratio>1.198324</pixelratio>
+            <refreshrate>60.316540</refreshrate>
+            <output>LVDS1</output>
+            <xrandrid>0x4d</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>LVDS1: 800x600 @ 56.25Hz</description>
+            <subtitles>570</subtitles>
+            <pixelratio>1.198324</pixelratio>
+            <refreshrate>56.250000</refreshrate>
+            <output>LVDS1</output>
+            <xrandrid>0x4e</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>800</right>
+                <bottom>600</bottom>
+            </overscan>
+        </resolution>
+        <resolution>
+            <description>LVDS1: 640x480 @ 59.94Hz</description>
+            <subtitles>456</subtitles>
+            <pixelratio>1.198324</pixelratio>
+            <refreshrate>59.940479</refreshrate>
+            <output>LVDS1</output>
+            <xrandrid>0x4f</xrandrid>
+            <overscan>
+                <left>0</left>
+                <top>0</top>
+                <right>640</right>
+                <bottom>480</bottom>
+            </overscan>
+        </resolution>
+    </resolutions>
+    <audiooutput>
+        <ac3passthrough>false</ac3passthrough>
+        <audiodevice>alsa:default</audiodevice>
+        <channellayout>0</channellayout>
+        <customdevice></customdevice>
+        <custompassthrough></custompassthrough>
+        <dontnormalizelevels>true</dontnormalizelevels>
+        <dtspassthrough>false</dtspassthrough>
+        <mode>0</mode>
+        <passthroughaac>false</passthroughaac>
+        <passthroughdevice>iec958</passthroughdevice>
+        <passthroughmp1>false</passthroughmp1>
+        <passthroughmp2>false</passthroughmp2>
+        <passthroughmp3>false</passthroughmp3>
+    </audiooutput>
+    <cache>
+        <harddisk>256</harddisk>
+    </cache>
+    <cacheaudio>
+        <dvdrom>256</dvdrom>
+        <internet>256</internet>
+        <lan>256</lan>
+    </cacheaudio>
+    <cachedvd>
+        <dvdrom>2048</dvdrom>
+        <lan>2048</lan>
+    </cachedvd>
+    <cacheunknown>
+        <internet>4096</internet>
+    </cacheunknown>
+    <cachevideo>
+        <dvdrom>2048</dvdrom>
+        <internet>4096</internet>
+        <lan>2048</lan>
+    </cachevideo>
+    <filelists>
+        <allowfiledeletion>false</allowfiledeletion>
+        <ignorethewhensorting>true</ignorethewhensorting>
+        <showaddsourcebuttons>false</showaddsourcebuttons>
+        <showextensions>true</showextensions>
+        <showhidden>false</showhidden>
+        <showparentdiritems>false</showparentdiritems>
+    </filelists>
+    <jukeboxer>
+        <autorandom>true</autorandom>
+        <autorandomtime>15</autorandomtime>
+    </jukeboxer>
+    <karaoke>
+        <autopopupselector>false</autopopupselector>
+        <charset>DEFAULT</charset>
+        <enabled>false</enabled>
+        <export></export>
+        <font>arial.ttf</font>
+        <fontcolors>0</fontcolors>
+        <fontheight>36</fontheight>
+        <importcsv></importcsv>
+    </karaoke>
+    <locale>
+        <charset>DEFAULT</charset>
+        <country>USA</country>
+        <language>Portuguese (Brazil)</language>
+        <timezone>America/Sao_Paulo</timezone>
+        <timezonecountry>Brazil</timezonecountry>
+    </locale>
+    <lookandfeel>
+        <enablerssfeeds>true</enablerssfeeds>
+        <font>Default</font>
+        <rssedit></rssedit>
+        <skin>skin.raven</skin>
+        <skincolors>SKINDEFAULT</skincolors>
+        <skintheme>SKINDEFAULT</skintheme>
+        <skinzoom>0</skinzoom>
+        <soundskin>OFF</soundskin>
+        <startupwindow>10000</startupwindow>
+    </lookandfeel>
+    <manager>
+        <contact>Paulo Pina</contact>
+        <contactphone>8477-2246</contactphone>
+        <estatenumber>000000000</estatenumber>
+        <mechanicalcounter>0</mechanicalcounter>
+        <owner>PleXus Dynamis</owner>
+    </manager>
+    <musicfiles>
+        <findremotethumbs>false</findremotethumbs>
+        <librarytrackformat></librarytrackformat>
+        <librarytrackformatright></librarytrackformatright>
+        <nowplayingtrackformat></nowplayingtrackformat>
+        <nowplayingtrackformatright></nowplayingtrackformatright>
+        <trackformat>[%N. ]%A - %</trackformat>
+        <trackformatright>%D</trackformatright>
+        <usetags>true</usetags>
+    </musicfiles>
+    <musiclibrary>
+        <backgroundupdate>false</backgroundupdate>
+        <cleanup></cleanup>
+        <enabled>true</enabled>
+        <export></export>
+        <import></import>
+        <musicfiles></musicfiles>
+        <showcompilationartists>true</showcompilationartists>
+        <updateonstartup>false</updateonstartup>
+    </musiclibrary>
+    <musicplayer>
+        <autoplaynextitem>true</autoplaynextitem>
+        <crossfade>7</crossfade>
+        <crossfadealbumtracks>true</crossfadealbumtracks>
+        <queuebydefault>true</queuebydefault>
+        <replaygainavoidclipping>false</replaygainavoidclipping>
+        <replaygainnogainpreamp>89</replaygainnogainpreamp>
+        <replaygainpreamp>89</replaygainpreamp>
+        <replaygaintype>1</replaygaintype>
+        <visualisation>visualization.projectm</visualisation>
+    </musicplayer>
+    <network>
+        <bandwidth>0</bandwidth>
+        <httpproxypassword></httpproxypassword>
+        <httpproxyport>8080</httpproxyport>
+        <httpproxyserver></httpproxyserver>
+        <httpproxyusername></httpproxyusername>
+        <usehttpproxy>false</usehttpproxy>
+    </network>
+    <operation>
+        <coinsperpulse>2</coinsperpulse>
+        <mode>0</mode>
+        <partymode_limitlist>false</partymode_limitlist>
+        <partymode_maxlistsize>15</partymode_maxlistsize>
+        <partymode_queuewait>3</partymode_queuewait>
+    </operation>
+    <pictures>
+        <displayresolution>10</displayresolution>
+        <generatethumbs>true</generatethumbs>
+        <showvideos>true</showvideos>
+        <useexifrotation>true</useexifrotation>
+        <usetags>true</usetags>
+    </pictures>
+    <powermanagement>
+        <displaysoff>0</displaysoff>
+        <shutdownstate>1</shutdownstate>
+        <shutdowntime>0</shutdowntime>
+    </powermanagement>
+    <pvrmanager>
+        <enabled>false</enabled>
+    </pvrmanager>
+    <reports>
+        <ablf></ablf>
+        <aprova></aprova>
+    </reports>
+    <screensaver>
+        <mode></mode>
+        <preview></preview>
+        <settings></settings>
+        <time>1</time>
+        <usedimonpause>false</usedimonpause>
+        <usemusicvisinstead>true</usemusicvisinstead>
+    </screensaver>
+    <services>
+        <devicename>Raven</devicename>
+        <esallinterfaces>false</esallinterfaces>
+        <escontinuousdelay>25</escontinuousdelay>
+        <esenabled>true</esenabled>
+        <esinitialdelay>750</esinitialdelay>
+        <esmaxclients>20</esmaxclients>
+        <esport>9777</esport>
+        <esportrange>10</esportrange>
+        <upnprenderer>false</upnprenderer>
+        <upnpserver>false</upnpserver>
+        <webserver>false</webserver>
+        <webserverpassword></webserverpassword>
+        <webserverport>8080</webserverport>
+        <webserverusername>raven</webserverusername>
+        <webskin>webinterface.default</webskin>
+        <zeroconf>true</zeroconf>
+    </services>
+    <slideshow>
+        <displayeffects>true</displayeffects>
+        <shuffle>true</shuffle>
+        <staytime>5</staytime>
+    </slideshow>
+    <smb>
+        <winsserver></winsserver>
+        <workgroup>WORKGROUP</workgroup>
+    </smb>
+    <subtitles>
+        <align>0</align>
+        <charset>DEFAULT</charset>
+        <color>1</color>
+        <custompath pathversion="1"></custompath>
+        <font>arial.ttf</font>
+        <height>28</height>
+        <overrideassfonts>false</overrideassfonts>
+        <style>1</style>
+    </subtitles>
+    <system>
+        <playlistspath pathversion="1">special://profile/playlists/</playlistspath>
+    </system>
+    <videolibrary>
+        <actorthumbs>true</actorthumbs>
+        <backgroundupdate>false</backgroundupdate>
+        <cleanup></cleanup>
+        <enabled>true</enabled>
+        <export></export>
+        <flattentvshows>1</flattentvshows>
+        <groupmoviesets>false</groupmoviesets>
+        <import></import>
+        <musicfiles></musicfiles>
+        <seasonthumbs>true</seasonthumbs>
+        <showunwatchedplots>true</showunwatchedplots>
+        <updateonstartup>false</updateonstartup>
+    </videolibrary>
+    <videoplayer>
+        <adjustrefreshrate>false</adjustrefreshrate>
+        <displayresolution>10</displayresolution>
+        <errorinaspect>0</errorinaspect>
+        <maxspeedadjust>5.000000</maxspeedadjust>
+        <pauseafterrefreshchange>0</pauseafterrefreshchange>
+        <rendermethod>0</rendermethod>
+        <resamplequality>1</resamplequality>
+        <stretch43>4</stretch43>
+        <synctype>2</synctype>
+        <teletextenabled>true</teletextenabled>
+        <usedisplayasclock>false</usedisplayasclock>
+        <usepbo>true</usepbo>
+    </videoplayer>
+    <videoscreen>
+        <guicalibration></guicalibration>
+        <haslcd>true</haslcd>
+        <resolution>12</resolution>
+        <screen>-1</screen>
+        <screenmode>WINDOW</screenmode>
+        <testpattern></testpattern>
+        <vsync>3</vsync>
+    </videoscreen>
+    <window>
+        <height>643</height>
+        <width>1144</width>
+    </window>
+    <skinsettings>
+        <setting type="bool" name="skin.raven.library_global_clock">false</setting>
+        <setting type="bool" name="skin.raven.debuggrid">false</setting>
+        <setting type="bool" name="skin.raven.hidefanart">false</setting>
+        <setting type="bool" name="skin.raven.ShowBackgroundVis">false</setting>
+        <setting type="bool" name="skin.raven.ShowcaseFanart">false</setting>
+        <setting type="bool" name="skin.raven.LockViews">false</setting>
+        <setting type="bool" name="skin.raven.MusicShowcaseFanart">false</setting>
+        <setting type="bool" name="skin.raven.3dmusic_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.music_files_fanart">false</setting>
+        <setting type="bool" name="skin.raven.Files_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.no_media_flags">false</setting>
+        <setting type="bool" name="skin.raven.autoscroll">false</setting>
+        <setting type="bool" name="skin.raven.noflowalbum">false</setting>
+        <setting type="bool" name="skin.raven.darkshowcase">false</setting>
+        <setting type="bool" name="skin.raven.use_clock">false</setting>
+        <setting type="bool" name="skin.raven.LibraryUpdated">true</setting>
+        <setting type="bool" name="skin.raven.PosterPlus">false</setting>
+        <setting type="bool" name="skin.raven.Poster_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.Use_Startup_Playlist">false</setting>
+        <setting type="bool" name="skin.raven.FanartNoVisualisation">false</setting>
+        <setting type="bool" name="skin.raven.FullscreenJukebox">false</setting>
+        <setting type="bool" name="skin.raven.vis_photos_backdrops">false</setting>
+        <setting type="bool" name="skin.raven.vis_music_backdrops">false</setting>
+        <setting type="bool" name="skin.raven.DarkFullscreenMusicPlayback">false</setting>
+        <setting type="bool" name="skin.raven.no_clock">false</setting>
+        <setting type="bool" name="skin.raven.SubsScript_Enable">false</setting>
+        <setting type="bool" name="skin.raven.hometheater">false</setting>
+        <setting type="bool" name="skin.raven.zune_music">false</setting>
+        <setting type="bool" name="skin.raven.horizontal_home">false</setting>
+        <setting type="bool" name="skin.raven.horizontal_bottom_align">false</setting>
+        <setting type="bool" name="skin.raven.homepageHideRecentlyAdded">false</setting>
+        <setting type="bool" name="skin.raven.HomepageWeatherWidget">false</setting>
+        <setting type="bool" name="skin.raven.conditions_weather_backdrop">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoVideosButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoMoviesButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoTVShowsButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoMusicButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoPicturesButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoScriptsButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNofavouritesButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoWeatherButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoShutdownButton">false</setting>
+        <setting type="bool" name="skin.raven.HomeMenuNoSettingsButton">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom4">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom5">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom6">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom7">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom8">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom9">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom10">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom3">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom2">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom1">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton1">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton2">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton3">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton4">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton5">false</setting>
+        <setting type="bool" name="skin.raven.HomeScriptButton6">false</setting>
+        <setting type="bool" name="skin.raven.TVPosters">false</setting>
+        <setting type="bool" name="skin.raven.TVBanners">false</setting>
+        <setting type="bool" name="skin.raven.movieoverlays">false</setting>
+        <setting type="bool" name="skin.raven.tvoverlays">false</setting>
+        <setting type="bool" name="skin.raven.landscape_jpg">false</setting>
+        <setting type="bool" name="skin.raven.extrafanart">false</setting>
+        <setting type="bool" name="skin.raven.no_16x9">false</setting>
+        <setting type="bool" name="skin.raven.no_BannerPanel">false</setting>
+        <setting type="bool" name="skin.raven.no_Episode">false</setting>
+        <setting type="bool" name="skin.raven.no_Panel">false</setting>
+        <setting type="bool" name="skin.raven.no_Landscape">false</setting>
+        <setting type="bool" name="skin.raven.no_3DLandscape">false</setting>
+        <setting type="bool" name="skin.raven.no_LandPanel">false</setting>
+        <setting type="bool" name="skin.raven.no_Poster">false</setting>
+        <setting type="bool" name="skin.raven.no_Showcase">false</setting>
+        <setting type="bool" name="skin.raven.no_Wall">false</setting>
+        <setting type="bool" name="skin.raven.no_WallPanel">false</setting>
+        <setting type="bool" name="skin.raven.no_Landscape_Fanart">false</setting>
+        <setting type="bool" name="skin.raven.no_Logo">false</setting>
+        <setting type="bool" name="skin.raven.no_3dbanner">false</setting>
+        <setting type="bool" name="skin.raven.no_Jukebox">false</setting>
+        <setting type="bool" name="skin.raven.no_MusicShowcase">false</setting>
+        <setting type="bool" name="skin.raven.no_MusicWall">false</setting>
+        <setting type="bool" name="skin.raven.no_Shelf">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub2">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub3">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub4">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub5">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub6">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub7">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub8">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub9">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub10">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom11">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub11">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom12">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub12">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom13">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub13">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom14">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub14">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom15">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub15">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom16">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub16">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom17">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub17">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Custom18">false</setting>
+        <setting type="bool" name="skin.raven.Menu_Movies_Sub18">false</setting>
+        <setting type="string" name="skin.raven.CustomMusicFolder"></setting>
+        <setting type="string" name="skin.raven.CustomPicturesFolder"></setting>
+        <setting type="string" name="skin.raven.SubtitleScript_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom4_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom4_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom5_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom5_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom6_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom6_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom7_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom7_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom8_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom8_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom9_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom9_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom10_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom10_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom3_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom3_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom2_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom2_Folder"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom1_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom1_Folder"></setting>
+        <setting type="string" name="skin.raven.CustomVideosFolder"></setting>
+        <setting type="string" name="skin.raven.CustomMoviesFolder"></setting>
+        <setting type="string" name="skin.raven.CustomTVShowsFolder"></setting>
+        <setting type="string" name="skin.raven.Home_Custom_Back_Weather_Folder"></setting>
+        <setting type="string" name="skin.raven.Home_Custom_Back_Scripts_Folder"></setting>
+        <setting type="string" name="skin.raven.CustomfavouritesFolder"></setting>
+        <setting type="string" name="skin.raven.CustomSettingsFolder"></setting>
+        <setting type="string" name="skin.raven.Home_Custom_Back_Shutdown_Folder"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton1_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton1_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton2_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton2_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton3_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton3_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton4_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton4_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton5_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton5_Path"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton6_label"></setting>
+        <setting type="string" name="skin.raven.HomeScriptButton6_Path"></setting>
+        <setting type="string" name="skin.raven.MoviesCustom"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom1_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom2_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom3_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom4_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom5_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom6_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom7_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom8_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom9_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom10_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom11_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom11_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom12_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom12_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom13_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom13_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom14_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom14_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom15_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom15_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom16_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom16_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom17_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom17_Path"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom18_Label"></setting>
+        <setting type="string" name="skin.raven.Menu_Custom18_Path"></setting>
+    </skinsettings>
+</settings>

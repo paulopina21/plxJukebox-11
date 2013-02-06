@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335024215</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[KC ]]></original_keywords>
+	<keywords><![CDATA[+kc]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>2</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>14144</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[KC and The Sunshine Band]]></title>
+			<filename><![CDATA[kc_and_the_sunshine_band.jpg]]></filename>
+			<keywords><![CDATA[1080p]]></keywords>
+			<mbid>76a5a114-ed6a-4eb6-8a81-ad5768d4b41c</mbid>
+			<filesize>572990</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>17485</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Kaiser Chiefs]]></title>
+			<filename><![CDATA[KC-Fisheye3.jpg]]></filename>
+			<mbid>90218af4-4d58-4821-8d41-2ee295ebbe21</mbid>
+			<filesize>31870</filesize>
+			<dimensions>360x360</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

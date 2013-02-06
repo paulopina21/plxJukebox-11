@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335025621</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[DJ Magic Mike]]></original_keywords>
+	<keywords><![CDATA[+dj +magic +mike]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>1</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>23968</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[DJ Magic Mike]]></title>
+			<filename><![CDATA[magicmike_fanart.jpg]]></filename>
+			<keywords><![CDATA[DJ Magic Mike Magicmike]]></keywords>
+			<caption><![CDATA[DJ Magic Mike Artist Backdrop]]></caption>
+			<mbid>81e0f2b3-7b56-4327-b6e3-65e99658abb7</mbid>
+			<filesize>744466</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

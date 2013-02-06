@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335022802</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Jorge Ben]]></original_keywords>
+	<keywords><![CDATA[+jorge +ben]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>4</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>18427</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Jorge Ben]]></title>
+			<filename><![CDATA[jorge_ben_1.jpg]]></filename>
+			<keywords><![CDATA[Jorge Ben]]></keywords>
+			<caption><![CDATA[Jorge Ben]]></caption>
+			<mbid>a64448e7-8936-430c-ae77-9f556481a56b</mbid>
+			<filesize>260942</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>18428</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Jorge Ben]]></title>
+			<filename><![CDATA[jorge_ben.jpg]]></filename>
+			<keywords><![CDATA[Jorge Ben]]></keywords>
+			<caption><![CDATA[Jorge Ben]]></caption>
+			<mbid>a64448e7-8936-430c-ae77-9f556481a56b</mbid>
+			<filesize>613890</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>18473</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Jorge Ben]]></title>
+			<filename><![CDATA[jorge_ben_1~0.jpg]]></filename>
+			<keywords><![CDATA[Jorge Ben]]></keywords>
+			<caption><![CDATA[Jorge Ben]]></caption>
+			<mbid>a64448e7-8936-430c-ae77-9f556481a56b</mbid>
+			<filesize>685532</filesize>
+			<dimensions>900x900</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>18474</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Jorge Ben]]></title>
+			<filename><![CDATA[jorge_ben~0.jpg]]></filename>
+			<keywords><![CDATA[Jorge Ben]]></keywords>
+			<caption><![CDATA[Jorge Ben]]></caption>
+			<mbid>a64448e7-8936-430c-ae77-9f556481a56b</mbid>
+			<filesize>324020</filesize>
+			<dimensions>761x761</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

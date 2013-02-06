@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335026420</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Renato Russo]]></original_keywords>
+	<keywords><![CDATA[+renato +russo]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>3</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>14710</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Renato Russo]]></title>
+			<filename><![CDATA[Renato_Russo_1.jpg]]></filename>
+			<keywords><![CDATA[Renato Russo]]></keywords>
+			<mbid>8ce64b67-8535-45cf-9caf-87734a09b3fd</mbid>
+			<filesize>115806</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14711</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Renato Russo]]></title>
+			<filename><![CDATA[Renato_Russo_2.jpg]]></filename>
+			<keywords><![CDATA[Renato Russo]]></keywords>
+			<mbid>8ce64b67-8535-45cf-9caf-87734a09b3fd</mbid>
+			<filesize>42085</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14712</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Renato Russo]]></title>
+			<filename><![CDATA[Renato_Russo_3.jpg]]></filename>
+			<keywords><![CDATA[Renato Russo]]></keywords>
+			<mbid>8ce64b67-8535-45cf-9caf-87734a09b3fd</mbid>
+			<filesize>162508</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Empty-->
+<window>
+  <defaultcontrol always="true">666</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control type="image">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1280</width>
+      <height>720</height>
+      <texture>raven/startup/background.png</texture>
+      <animation effect="fade" start="100" end="80" time="0" condition="true">conditional</animation>
+    </control>
+		<control type="button" id="666">
+			<description>TRIGGER JUKEBOX</description>
+			<onfocus>ReplaceWindow(MyMusic)</onfocus>
+			<texturenofocus>-</texturenofocus>
+			<texturefocus>-</texturefocus>
+			<visible>!Skin.HasSetting(Use_Startup_Playlist)</visible>
+		</control>    
+    <control type="button" id="10">
+      <description>Trigger Weather</description>
+      <posx>-20</posx>
+      <posy>-20</posy>
+      <width>1</width>
+      <height>1</height>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus>-</texturefocus>
+      <label>$INFO[Weather.Conditions]</label>
+      <font>-</font>
+      <onfocus>SetFocus(11)</onfocus>
+    </control>
+    <control type="button" id="11">
+      <description>Trigger Latest Added</description>
+      <posx>-20</posx>
+      <posy>-20</posy>
+      <width>1</width>
+      <height>1</height>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus>-</texturefocus>
+      <label>$INFO[Window.Property(LatestMovie.1.Title)]</label>
+      <font>-</font>
+      <onfocus>SetFocus(12)</onfocus>
+    </control>
+    <control type="button" id="12">
+      <posx>-20</posx>
+      <posy>-20</posy>
+      <width>1</width>
+      <height>1</height>
+      <texturenofocus>-</texturenofocus>
+      <texturefocus>-</texturefocus>
+      <description>Trigger</description>
+      <onfocus>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onfocus>
+      <onfocus>XBMC.PlayMedia(special://skin/media/intro/intro.mp4)</onfocus>
+    </control>
+    <control type="button" id="100">
+      <description>E-learning</description>
+      <posx>200</posx>
+      <posy>300</posy>
+      <width>250</width>
+      <height>50</height>
+      <label>-</label>
+      <font>-</font>
+      <texturenofocus>raven/startup/elearning1.png</texturenofocus>
+      <texturefocus>raven/startup/elearning2.png</texturefocus>
+      <onright>101</onright>
+      <onclick>XBMC.ActivateWindow(MyVideoLibrary,tvshowtitles,return)</onclick>
+    </control>
+    <control type="button" id="101">
+      <description>Media Center</description>
+      <posx>500</posx>
+      <posy>300</posy>
+      <width>250</width>
+      <height>50</height>
+      <label>-</label>
+      <font>-</font>
+      <texturenofocus>raven/startup/mediacenter1.png</texturenofocus>
+      <texturefocus>raven/startup/mediacenter2.png</texturefocus>
+      <onleft>100</onleft>
+      <onright>102</onright>
+      <onclick>XBMC.ActivateWindow(Home)</onclick>
+    </control>
+    <control type="button" id="102">
+      <description>Jukebox</description>
+      <posx>800</posx>
+      <posy>300</posy>
+      <width>250</width>
+      <height>50</height>
+      <label>-</label>
+      <font>-</font>
+      <texturenofocus>raven/startup/jukebox1.png</texturenofocus>
+      <texturefocus>raven/startup/jukebox2.png</texturefocus>
+      <onleft>101</onleft>
+      <onclick>XBMC.ActivateWindow(MyMusic)</onclick>
+    </control>
+  </controls>
+</window>

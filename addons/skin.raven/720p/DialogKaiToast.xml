@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window id="107">
+  <animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+  <animation effect="fade" start="100" end="0" time="100">WindowClose</animation>
+  <coordinates>
+    <system>1</system>
+    <posx>0</posx>
+    <posy>0</posy>
+  </coordinates>
+  <controls>
+    <include>g_global_background_filter</include>
+    <control type="group">
+      <!--<control type="image"><posx>0</posx><posy>0</posy><width>400</width><height>80</height><texture border="20,20,20,2">confluence/InfoMessagePanel2.png</texture></control>-->
+      <posy>50</posy>
+      <control type="image" id="400">
+        <description>DIALOG ICON</description>
+        <posx>573</posx>
+        <posy>150</posy>
+        <width>136</width>
+        <height>136</height>
+        <aspectratio>keep</aspectratio>
+        <texture>raven/dialogs/warning.png</texture>
+      </control>
+      <control type="fadelabel" id="401">
+        <description>Line 1 Label</description>
+        <visible>false</visible>
+        <posx>75</posx>
+        <posy>15</posy>
+        <width>310</width>
+        <height>18</height>
+        <font>font13caps_title</font>
+        <textcolor>white</textcolor>
+        <align>left</align>
+        <aligny>center</aligny>
+        <scrollout>false</scrollout>
+        <pauseatend>2000</pauseatend>
+      </control>
+      <control type="fadelabel" id="402">
+        <description>Line 2 Label</description>
+        <posx>0</posx>
+        <posy>300</posy>
+        <width>1280</width>
+        <height>20</height>
+        <font>Font_AlbumName</font>
+        <textcolor>copper</textcolor>
+        <shadowcolor>shadow</shadowcolor>
+        <align>center</align>
+        <aligny>center</aligny>
+        <scrollout>false</scrollout>
+        <pauseatend>2000</pauseatend>
+      </control>
+    </control>
+  </controls>
+</window>

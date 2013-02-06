@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+	<server_time>1335024783</server_time>
+	<server_gmt_offset>+0200</server_gmt_offset>
+	<original_keywords><![CDATA[Manu Chao]]></original_keywords>
+	<keywords><![CDATA[+manu +chao]]></keywords>
+	<aid>1,5</aid>
+	<fields>title,caption,keywords</fields>
+	<results>4</results>
+	<limit>500</limit>
+	<offset>0</offset>
+	<images>
+		<image>
+			<id>1580</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[manu chao]]></title>
+			<filename><![CDATA[manu_chao.jpg]]></filename>
+			<mbid>7570a0dd-5a67-401b-b19a-261eee01a284</mbid>
+			<filesize>1194487</filesize>
+			<dimensions>1920x1080</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>3991</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Manu Chao]]></title>
+			<filename><![CDATA[Manu_Chao.jpg]]></filename>
+			<mbid>7570a0dd-5a67-401b-b19a-261eee01a284</mbid>
+			<filesize>585796</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>14623</id>
+			<aid>1</aid>
+			<album>1</album>
+			<title><![CDATA[Manu Chao]]></title>
+			<filename><![CDATA[Manu_Chao_-_Fan_Art.jpg]]></filename>
+			<mbid>7570a0dd-5a67-401b-b19a-261eee01a284</mbid>
+			<filesize>110286</filesize>
+			<dimensions>1280x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+		<image>
+			<id>19789</id>
+			<aid>5</aid>
+			<album>5</album>
+			<title><![CDATA[Manu Chao]]></title>
+			<filename><![CDATA[Manu_Chao_folder_02.jpg]]></filename>
+			<mbid>7570a0dd-5a67-401b-b19a-261eee01a284</mbid>
+			<filesize>146024</filesize>
+			<dimensions>720x720</dimensions>
+			<rating>0</rating>
+			<votes>0</votes>
+		</image>
+	</images>
+</search>
